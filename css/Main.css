@@ -65,10 +65,10 @@ body
 .detail
 {
     
-    justify-content: left;
-padding-left: 2%;
+justify-content: left;
+padding-left: 1.5%;
 padding-right: 2%; 
-font-size: x-large;
+font-size: large;
     
 }
 .MDetail
