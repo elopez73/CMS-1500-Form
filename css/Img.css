@@ -1,12 +1,12 @@
 .modalContent img
 {
     object-fit: fill;
-    width: 97%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     transition: width .35s ease-in-out;
     border-style: solid;
     border-color: bisque;
-    border-radius: 1%;
+    border-radius: .5%;
 }
 .EDI img
 {

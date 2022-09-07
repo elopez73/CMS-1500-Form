@@ -113,10 +113,9 @@ font-size: large;
 {
     
     display:flex;
-    justify-content: center;
     align-items: center;
-    height:85%;
-    width: 85%;
+    height:100%;
+    width: 100%;
     
 }
 .EDI
