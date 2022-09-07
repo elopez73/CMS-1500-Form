@@ -1,0 +1,552 @@
+.modalContent img
+{
+    object-fit: fill;
+    width: 85%;
+    height: 85%;
+    transition: width .35s ease-in-out;
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 1%;
+}
+.EDI img
+{
+
+width: 50px;
+height: 50px;
+object-fit: fill;
+transition: width .35s ease-in-out;
+
+
+
+
+}
+.Exit img
+{
+width: 50px;
+height: 50px;
+object-fit: fill;
+transition: width .35s ease-in-out;
+
+}
+
+#CMSForm  img:hover
+{
+    filter: grayscale(10%);
+    Transform: scale(1.05);
+}
+
+.EDI  img:hover
+{
+    filter: grayscale(10%);
+    Transform: scale(1.05);
+}
+.Exit img:hover
+{
+    filter: grayscale(10%);
+    Transform: scale(1.05);
+}
+
+.Logo img
+{
+    justify-content: left;
+    background-color: rgba(255, 255, 255, 0);
+    width: 225px;
+    height:90px;
+    border: none;
+    
+}
+#CMSForm .box1 img
+{
+    
+    height: 40px;
+    width: 605px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+   
+}
+#CMSForm .box1a img
+{
+    
+    height: 40px;
+    width: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+   
+}
+#CMSForm .box2 img
+{
+    height: 40px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box3 img
+{
+    height: 40px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box4 img
+{
+    height: 40px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box5 img
+{
+    height: 120px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box6 img
+{
+    height: 40px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box7 img
+{
+    height: 120px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box8 img
+{
+    height: 70px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box9 img
+{
+    height: 40px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box10 img
+{
+    height: 40px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box11 img
+{
+    height: 40px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box12 img
+{
+    height: 75px;
+    width: 605px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box13 img
+{
+    height: 75px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box14 img
+{
+    height: 40px;
+    width: 310px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box15 img
+{
+    height: 40px;
+    width: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box16 img
+{
+    height: 40px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box17 img
+{
+    height: 40px;
+    width: 310px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box17a img
+{
+    height: 15px;
+    width: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box17b img
+{
+    height: 15px;
+    width: 290px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box18 img
+{
+    height: 40px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box19 img
+{
+    height: 40px;
+    width: 605px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box20 img
+{
+    height: 40px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box21 img
+{
+    height: 90px;
+    width: 605px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box22 img
+{
+    height: 40px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box23 img
+{
+    height: 40px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24a img
+{
+    height: 250px;
+    width: 215px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24b img
+{
+    height: 250px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24c img
+{
+    height: 250px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24d img
+{
+    height: 250px;
+    width: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24e img
+{
+    height: 250px;
+    width: 65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24f img
+{
+    height: 250px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24g img
+{
+    height: 250px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24h img
+{
+    height: 250px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box24i img
+{
+    height: 250px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+
+#CMSForm .box24j img
+{
+    height: 250px;
+    width: 158px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box25 img
+{
+    height: 40px;
+    width: 270px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box26 img
+{
+    height: 40px;
+    width: 170px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box27 img
+{
+    height: 40px;
+    width: 145px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box28 img
+{
+    height: 40px;
+    width: 125px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box29 img
+{
+    height: 40px;
+    width: 125px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box30 img
+{
+    height: 40px;
+    width: 115px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box31 img
+{
+    height: 105px;
+    width: 275px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box32 img
+{
+    height: 75px;
+    width: 321px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box32a img
+{
+    height: 20px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box32b img
+{
+    height: 20px;
+    width: 195px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box33 img
+{
+    height: 75px;
+    width: 376px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box33a img
+{
+    height: 20px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}
+#CMSForm .box33b img
+{
+    height: 20px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-style: groove;
+    transition: all .25s linear;
+}

@@ -1,0 +1,135 @@
+#CMSForm .Row1
+{
+    
+    max-width: 1000px;
+    display: flex;
+}
+#CMSForm .Row2
+{
+    display: flex;
+    max-width: 1000px;
+}
+#CMSForm .Row3
+{
+    display: flex;
+    max-width: 1000px;
+    
+}
+#CMSForm .Row4
+{
+    display: flex;
+    max-width: 1000px;
+    
+}
+#CMSForm .Row5
+{
+    
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+#CMSForm .Row6
+{
+    display: flex;
+    max-width: 1000px;
+}
+#CMSForm .Row7
+{
+    display: flex;
+    max-width: 1000px;
+    
+}
+#CMSForm .Row8
+{
+    display: flex;
+    max-width: 1000px;
+    
+}
+#CMSForm .Row9
+{
+    
+    max-width: 1000px;
+    display: flex;
+}
+#CMSForm .Row10
+{
+    display: flex;
+    max-width: 1000px;
+}
+#CMSForm .Row11
+{
+    display: flex;
+    max-width: 1000px;
+    
+}
+#CMSForm .Row12
+{
+    display: flex;
+    max-width: 1000px;
+    
+}
+#CMSForm .Row13
+{
+    
+    max-width: 1000px;
+    display: flex;
+    
+}
+#CMSForm .Row14
+{
+    display: flex;
+    max-width: 1000px;
+}
+#CMSForm .Row15
+{
+    display: flex;
+    max-width: 1000px;
+    
+}
+#CMSForm .Row16
+{
+    display: flex;
+    max-width: 1000px;
+    
+}
+/*Box Six needed its own Row to fit multiple Pictures*/
+#CMSForm .box6
+{
+    display: block;
+    padding: 0;
+    
+}
+#CMSForm .box17
+{
+    display: block;
+    padding: 0;
+    
+}
+#CMSForm .box22
+{
+    display: block;
+    padding: 0;
+    
+}
+#CMSForm .box32
+{
+    display: block;
+    padding: 0;
+    
+}
+#CMSForm .box32a
+{
+    display:flex;
+    padding: 0;
+}   
+#CMSForm .box33
+{
+    display: block;
+    padding: 0;
+    
+}
+#CMSForm .box33a
+{
+    display:flex;
+    padding: 0;
+}   
