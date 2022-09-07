@@ -6,11 +6,21 @@ body
 
    
 }
-.Head
-{   display:flex;
+.Title 
+{   
+    display: inline-block;
     justify-content: center;
     align-items: center;
+    padding-left: 24%;
 }
+.Logo
+{
+    display:block;
+    justify-content: center;
+    align-items: center;
+   
+}
+
 
 #D
 {
