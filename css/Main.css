@@ -7,18 +7,10 @@ body
    
 }
 .Head
-{   display: flex;
+{   display:flex;
     justify-content: center;
     align-items: center;
 }
-.Logo
-{
-    display:block;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-}
-
 
 #D
 {
