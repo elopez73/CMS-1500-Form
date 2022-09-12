@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/bubbly-2');
 html{
     scroll-behavior: smooth;
     scroll-snap-align: center;
@@ -7,11 +8,11 @@ body
 {
     
     margin: 0;
-    font-family: Arial,sans-serif;
+    font-family: 'Bubbly', sans-serif;
     line-height: 1.6;
     height: 100vh;
-    background-color: rgba(146, 199, 241,.7)  ;
-    background-size: cover;
+    
+  
     
     
    
@@ -81,32 +82,79 @@ body
 #Home
 {
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+   
+    
+    
     width: 100vw;
     height:100vh;
-    text-transform: uppercase;
-    font-size: 230%;
-    font-weight: 800;
     color: rgb(64, 71, 82);
     border-bottom: 8px solid #bbb;
     border-radius: 5px;
     
 }
+#Home .Mainimg
+{
+    display: block;
+    position: absolute;
+    
+    margin-top: 3%;
+    margin-left: 37%;
+    padding: 0;
+    width: 1200px;
+    height:350px ;
+    border-bottom: 3px solid #bbb;
+    border-radius: 5px;
+    
+
+}
+#Home .secimg
+{
+    display: block;
+    position: absolute;
+    z-index: 9;
+    margin-right: 50%; /* for demo purpose  */
+    margin-left: 0%;
+    padding-right: 0;
+    margin-top: 3%;
+    opacity: .8;
+    width: 705px;
+    height: 350px;
+    border-bottom: 3px solid #bbb;
+    border-radius: 5px;
+
+}
+#Home .Intro
+{
+    display: block;
+    position: absolute;
+    justify-content: center;
+    
+    margin-top: 25%;
+    margin-left: 30%;
+    text-align: center;
+    padding: 0;
+    
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: 800;
+    
+}
 #Home p
 {
+    display: block;
    font-weight:200;
    font-size: 50%;
    opacity: .9 ;
+   
 }
 #Home i
 {
-  
-   font-size: 35%;
-   padding-right: 70%; 
-   padding-top:15%;
+    display: block;
+    padding: 0;
+  margin-right: 0%;
+   font-size: 60%;
+   margin-top: 20%;
+   margin-left: 0%;
    color: rgb(173, 33, 33);
    
    
@@ -118,6 +166,7 @@ body
     position: fixed;
     display: block;
     justify-content: left;
+    padding-left: 20%;
 }
 
 
