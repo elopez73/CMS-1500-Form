@@ -10,8 +10,9 @@ body
     font-family: Arial,sans-serif;
     line-height: 1.6;
     height: 100vh;
-    background-color: rgb(146, 199, 241)  ;
+    background-color: rgba(146, 199, 241,.7)  ;
     background-size: cover;
+    
     
    
 }
@@ -34,7 +35,6 @@ body
     width: 100%;
     height: 80px;
     background-color: rgba(247, 222, 156, 0.9);
-    border-color: ;
 }
 .navbar ul
 {
@@ -76,9 +76,10 @@ body
     height:100vh;
     text-transform: uppercase;
     font-size: 230%;
-    font-weight: 700;
-    color: rgb(240, 246, 255);
-    
+    font-weight: 800;
+    color: rgb(64, 71, 82);
+    border-bottom: 8px solid #bbb;
+    border-radius: 5px;
     
 }
 #Home p
@@ -114,7 +115,8 @@ body
     padding-top: 3%;
     justify-content: center;
     align-items: center;
-
+    border-bottom: 8px solid #bbb;
+    border-radius: 5px;
    
 }
 
