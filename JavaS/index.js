@@ -2,6 +2,7 @@ const modal = document.querySelector(".modal");
 const modalCont=document.querySelector(".modalContent");
 var modalImg =document.querySelector(".modalContent img");
 const EDI= document.getElementById("L");
+const Content= document.getElementById("Content");
 const exit = document.querySelector(".Exit img");
 
 
@@ -29,6 +30,10 @@ function showFunction(pathmodalimage)
 function seturl(link)
 {       
         EDI.setAttribute("href", link);
+}
+function settext(link)
+{       
+        Content.innerHTML = link;
 }
 
 

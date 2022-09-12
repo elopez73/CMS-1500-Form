@@ -8,6 +8,8 @@
     border-color: bisque;
     border-radius: .5%;
 }
+
+
 .EDI img
 {
 
@@ -15,10 +17,6 @@ width: 50px;
 height: 50px;
 object-fit: fill;
 transition: width .35s ease-in-out;
-
-
-
-
 }
 .Exit img
 {
@@ -51,7 +49,7 @@ transition: width .35s ease-in-out;
     justify-content: left;
     background-color: rgba(255, 255, 255, 0);
     width: 225px;
-    height:90px;
+    height:80px;
     border: none;
     
 }
@@ -413,7 +411,7 @@ transition: width .35s ease-in-out;
 #CMSForm .box24j img
 {
     height: 250px;
-    width: 158px;
+    width: 165px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

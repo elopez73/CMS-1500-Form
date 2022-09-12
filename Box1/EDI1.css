@@ -1,8 +1,28 @@
-body
-{
-    
-    margin: 0;
-    font-family:Helvetica;
 
-   
+
+.Loop2010BB
+{
+    border-style: solid;
+    width: fit-content;
+    background-color: darkgrey;
+    font-size: large;
+  
+}
+.Segments
+{
+    background-color: cadetblue;
+    border-style: solid;
+    padding-left: 1%;
+}
+.NM1
+{
+    border-style: solid;
+}
+.NM2
+{
+    border-style: solid;
+}
+.NM3
+{
+    border-style: solid;
 }
