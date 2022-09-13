@@ -1,7 +1,8 @@
 @import url('http://fonts.cdnfonts.com/css/bubbly-2');
 html{
     scroll-behavior: smooth;
-    scroll-snap-align: center;
+    scroll-padding-top: var(--scroll-padding,3rem);
+
     
 }
 body
@@ -9,23 +10,12 @@ body
     
     margin: 0;
     font-family: open sans,Helvetica,Arial,sans-serif;
-   
-    
-    
-  
-    
-    
-   
+
 }
 .container
 {
     width: 100vw;
-    height:100vh;
-    
-   
-    
-    
-    
+    height:100vh;   
 }
 .navbar
 {
@@ -33,7 +23,7 @@ body
     top:0;
     display: flex;
     width: 100%;
-    height: 73px;
+    height: 4rem;
     background-color: rgba(247, 222, 156, 0.9);
     border-bottom: 3px solid #bbb;
     border-radius: 5px;
@@ -82,9 +72,6 @@ body
 #Home
 {
     display:flex;
-   
-    
-    
     width: 100vw;
     height:100vh;
     color: rgb(64, 71, 82);
@@ -92,40 +79,32 @@ body
     border-radius: 5px;
     
 }
-#Home .Mainimg
+
+#Home .Tophalf
 {
-    display: block;
-    position: absolute;
-    
-    margin-top: 3%;
-    margin-left: 37%;
-    padding: 0;
-    width: 1200px;
-    height:340px ;
+    display: flex;
+    margin-top: 3.3rem;
     border-bottom: 3px solid #bbb;
     border-radius: 5px;
-    
+}
+#Home .Mainimg
+{
+    width: 75rem;
+    height:21.75rem ;
 
 }
 #Home .secimg
 {
-    display: block;
-    position: absolute;
-    z-index: 9;
-    margin-right: 50%; /* for demo purpose  */
-    margin-left: 0%;
-    padding-right: 0;
-    margin-top: 3%;
-    opacity: .8;
-    width: 705px;
-    height: 340px;
-    border-bottom: 3px solid #bbb;
-    border-radius: 5px;
+   
+    width: 44.063rem;
+    height: 21.75rem;
+    
 
 }
 #Home .Intro
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     justify-content: center;
     
@@ -151,10 +130,9 @@ body
 {
     display: block;
     padding: 0;
-  margin-right: 0%;
+    justify-content: left;
    font-size: 70%;
-   margin-top: 20%;
-   margin-left: 0%;
+   margin-top: 10rem;
    color: rgb(173, 33, 33);
    
    
@@ -174,7 +152,6 @@ body
 {
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
     justify-content: center;
     align-items: center;
     border-bottom: 8px solid #bbb;

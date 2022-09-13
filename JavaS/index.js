@@ -4,9 +4,9 @@ var modalImg =document.querySelector(".modalContent img");
 const EDI= document.getElementById("L");
 const Content= document.getElementById("Content");
 const exit = document.querySelector(".Exit img");
+const Navheight =document.querySelector('.navbar').offsetHeight;
 
-
-
+document.documentElement.style.setProperty('--scroll-padding',Navheight+ -2 +"px");
 
 /*Boxes*/
 
@@ -17,9 +17,6 @@ window.onclick = function(event)
     modal.style.display = "none";
   }
 }
-
-
-
 function showFunction(pathmodalimage)
 {       
         
