@@ -31,6 +31,7 @@ function seturl(link)
 function settext(link)
 {       
         Content.innerHTML = link;
+        Content.setAttribute("")
 }
 
 

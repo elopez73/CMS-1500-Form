@@ -2,6 +2,7 @@
 
 .Loop2010BB
 {
+    display:flex;
     border-style: solid;
     width: fit-content;
     background-color: darkgrey;
@@ -10,19 +11,35 @@
 }
 .Segments
 {
+
     background-color: cadetblue;
     border-style: solid;
     padding-left: 1%;
 }
-.NM1
+.NM101
 {
     border-style: solid;
 }
-.NM2
+.NM102
 {
     border-style: solid;
 }
-.NM3
+.NM103
 {
     border-style: solid;
+}
+.NM108
+{
+    border-style: solid;
+}
+.NM109
+{
+    border-style: solid;
+}
+.Content
+{
+    display: inline;
+    width: 10rem;
+    height: 10rem;
+    background-color: beige;
 }
