@@ -21,6 +21,7 @@ body
     position:fixed;
     top:0;
     display: flex;
+    
     width: 100%;
     height: 4rem;
     background-color: rgb(255, 255, 255);
@@ -32,15 +33,16 @@ body
 {
     display: flex;
     list-style: none;
-    width: 100%;
+    width: 100vw;
     justify-content: right;
-    padding-right: 15%;
+    padding-right: 10%;
     
     
     
 }
 .navbar ul li 
 {
+    display: flex;
    margin: 0 1rem;
    padding: 1rem;
    border-top: 1px solid rgb(95, 88, 88);
@@ -66,6 +68,13 @@ body
    border-bottom: 3px solid rgb(95, 88, 88);
    border-radius: 2px;
 
+}
+.Logo
+{
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
 }
 
 #Home
@@ -147,13 +156,6 @@ body
 }
 
     
-.Logo
-{
-    position: fixed;
-    display: block;
-    justify-content: left;
-    padding-left: 20%;
-}
 
 
 #CMSPage
@@ -173,13 +175,17 @@ body
 
 #CMSForm
 {
-    display: block;
+    display: flex;
+    flex-shrink: 1;
+    width: 62.5rem;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-style: solid;
     border-color:black;
     border-width: 2px;
 }
+
 
 
 

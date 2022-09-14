@@ -2,7 +2,8 @@
 {
     
     max-width: 1000px;
-    display: flex;
+    display: inline-flex;
+    
 }
 #CMSForm .Row2
 {
