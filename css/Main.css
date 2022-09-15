@@ -176,8 +176,6 @@ body
 #CMSForm
 {
     display: flex;
-    flex-shrink: 1;
-    width: 62.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
