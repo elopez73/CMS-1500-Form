@@ -8,7 +8,7 @@ body
 {
     
     margin: 0;
-    font-family: open sans,Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
 
 }
 .container
@@ -135,6 +135,12 @@ body
     font-weight: 800;
     
 }
+#Home .Blue
+{
+    color: #8ed1fc;
+    font-size: 110%;
+    font-weight: 700;
+}
 #Home p
 {
     display: block;
@@ -149,7 +155,7 @@ body
     padding: 0;
     justify-content: left;
    font-size: 70%;
-   margin-top: 10rem;
+   margin-top: 5rem;
    color: rgb(173, 33, 33);
    
    
