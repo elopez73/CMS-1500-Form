@@ -14,7 +14,8 @@ body
 .container
 {
     width: 100vw;
-    height:100vh;   
+    height:100vh; 
+    scroll-snap-type: y mandatory;  
 }
 .navbar
 {
@@ -22,7 +23,7 @@ body
     top:0;
     display: flex;
     
-    width: 100%;
+    width: 100vw;
     height: 4rem;
     background-color: rgb(255, 255, 255);
     border-bottom: 3px solid #bbb;
@@ -87,6 +88,7 @@ body
     color: rgb(64, 71, 82);
     border-bottom: 8px solid #bbb;
     border-radius: 5px;
+    scroll-snap-align: center;
     
 }
 
@@ -144,6 +146,7 @@ body
 #Home p
 {
     display: block;
+    margin-top: .1rem;
    font-weight:300;
    font-size: 70%;
    
@@ -169,10 +172,12 @@ body
     display: flex;
     flex-direction: column;
     width: 100vw;
+    
     justify-content: center;
     align-items: center;
     border-bottom: 8px solid #bbb;
     border-radius: 5px;
+    scroll-snap-align: center;
    
 }
 
