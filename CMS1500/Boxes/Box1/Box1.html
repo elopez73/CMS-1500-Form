@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+<div class="Contain">
+<h1>Loop 2010BB</h1>
+<h2>Segments</h2>
+<div class ="segments">
+   
+    <button   data-modal-target="#NM1">Segment NM1: Payer Name</button>
+    <button   data-modal-target="#NM3">Segment NM3: Payer Address Information</button>
+
+</div>
+
+
+
+
+
+  <div class="modal" id="NM1">
+    <div class="modal-header">
+    <button onclick="SetdivContent(id)" id="#NM101">NM101</button>
+    <button onclick="SetdivContent(id)" id="#NM102">NM102</button>
+    <button onclick="SetdivContent(id)" id="#NM103">NM103</button>
+    <button onclick="SetdivContent(id)" id="#NM108">NM108</button>
+    <button data-close-button class="close-button">&times;</button>
+    
+    </div>
+<div class="modal-body">
+        <div class="NM" id="InfoC"></div>
+            <div class="IC">
+                <div  id="NM101">"PR"</div>
+                <div id="NM102" >"2"</div>
+                <div  id="NM103">This segment prints out the Insurance Name on the claim, if there is a insurance name specified in Medisoft in the Insurance Edit window.</div>
+                <div id="NM108" >"PI"</div>
+            </div>
+        </div>
+</div>
+
+  <div class="modal" id="NM3">
+    <div class="modal-header">
+    <button onclick="SetdivContent(id)" id="#NM101">NM101</button>
+    <button onclick="SetdivContent(id)" id="#NM102">NM102</button>
+    <button onclick="SetdivContent(id)" id="#NM103">NM103</button>
+    <button onclick="SetdivContent(id)" id="#NM108">NM108</button>
+    <button data-close-button class="close-button">&times;</button>
+    
+    </div>
+<div class="modal-body">
+        <div class="NM" id="InfoC"></div>
+            <div class="IC">
+                <div  id="NM101">"PR"</div>
+                <div id="NM102" >"2"</div>
+                <div  id="NM103">This segment prints out the Insurance Name on the claim, if there is a insurance name specified in Medisoft in the Insurance Edit window.</div>
+                <div id="NM108" >"PI"</div>
+            </div>
+        </div>
+</div>
+<div id="overlay"></div>
+</div>
+</body>
+</html>
