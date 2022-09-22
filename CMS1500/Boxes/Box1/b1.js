@@ -1,22 +1,46 @@
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const infoClose = document.querySelectorAll('[info-close-button]')
-const content=document.getElementsByClassName('.NM')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
-const allNM = document.getElementsByClassName('.NM.active')
+
+
+const setInfo = document.querySelectorAll('[data-info-target]') 
+const classBod = document.getElementsByClassName('.modal-body.active')
 
 
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    
     const modal = document.querySelector(button.dataset.modalTarget)
-    
     openModal(modal)
+    
+    openModalButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget)
+      const info =  document.getElementById(button.dataset.infoTarget)
+      modal.textContent = info.textContent
+      console.log(modal)
+      console.log(info)
+  
+  })    
+  })
+  })    
+  })
+  
 
 
+
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => { 
+    const modal = button.closest('.modal') 
+    closeModal(modal)
   })
 })
+ 
+
+
+
+  
 
 
 overlay.addEventListener('click', () => {
@@ -25,54 +49,33 @@ overlay.addEventListener('click', () => {
     closeModal(modal)
   })
 })
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal') 
-    closeModal(modal)
-    
-  })
-})
 
 
-function openModal(modal) {
- if (modal == null) return
-    
+function openModal(modal)
+ {
+  
+  
+  if (modal == null) return
   modal.classList.add('active')
   overlay.classList.add('active')
- 
 }
 
-function closeModal(modal) {
+function closeModal(modal)
+ {
+
   if (modal == null) return
   modal.classList.remove('active')
   overlay.classList.remove('active')
-  const Cont = document.getElementById('InfoC')
-  Cont.textContent = "";
-  
-}
-window.onclick=function(e)
+ }
+
+function setinfo(info,modal)
 {
-   
-   
-    if(e.target.className === '.NM.active')
-    {
-        e.target.style.display = "none";
-    }
-    
+ const modatext = info
+ const modalloc = modal.textContent
+ console.log(info)
+  modalloc = modatext
 }
 
 
-function SetdivContent(Any)
-{   
-
-    const Info = document.querySelector(Any);
-    const Tinfo = Info.textContent
-    const Cont = document.getElementById('InfoC')
-    Cont.textContent = Tinfo;
-   
-    
-    console.log(Tinfo)
 
 
-   
-}
