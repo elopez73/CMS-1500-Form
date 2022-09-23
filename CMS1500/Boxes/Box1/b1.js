@@ -15,12 +15,13 @@ openModalButtons.forEach(button => {
     
     openModalButtons.forEach(button => {
       button.addEventListener('click', () => {
-        const modal = document.querySelector(button.dataset.modalTarget)
+      const modal = document.querySelector(button.dataset.modalTarget)
       const info =  document.getElementById(button.dataset.infoTarget)
+      
       modal.textContent = info.textContent
       console.log(modal)
       console.log(info)
-  
+        
   })    
   })
   })    
@@ -32,8 +33,14 @@ openModalButtons.forEach(button => {
 
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => { 
+    
+    
     const modal = button.closest('.modal') 
+    
     closeModal(modal)
+    
+
+  
   })
 })
  
@@ -62,19 +69,16 @@ function openModal(modal)
 
 function closeModal(modal)
  {
-
+  
+ 
   if (modal == null) return
+  
   modal.classList.remove('active')
   overlay.classList.remove('active')
+  
  }
 
-function setinfo(info,modal)
-{
- const modatext = info
- const modalloc = modal.textContent
- console.log(info)
-  modalloc = modatext
-}
+
 
 
 
