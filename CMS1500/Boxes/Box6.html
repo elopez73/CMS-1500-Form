@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+
+<section class="Contain">
+<h1>Electronic Location:
+<br>Loop 2000B
+<br>"Insured Hierachical"
+</h1>
+<h2>Segments</h2>
+<div class ="segments">
+
+    <button   data-modal-target="#HL" >Segment HL: Payer Name</button>
+    <button   data-modal-target="#SBR">Segment SBR: Insured Information</button>
+    <button   data-modal-target="#PAT" >Segment PAT: Insured Information</button>
+    
+
+</section>
+
+
+
+
+
+<div class="modal" id="HL">
+    <div class="modal-header">
+    <button data-modal-target="#modalb1" data-info-target="HL01">HL01</button>
+    <button data-modal-target="#modalb1" data-info-target="HL02">HL02</button>
+    <button data-modal-target="#modalb1" data-info-target="HL03">HL03</button>
+    <button data-modal-target="#modalb1" data-info-target="HL04">HL04</button>
+
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+<!-- Information will go in this body-->
+    <div  class="modal-body" id="modalb1"></div>
+            <div class="IC">
+                <div id="HL01">"This segment is blank in the Standard 837P IGuide in Medisoft)"</div>
+                <div id="HL02" >"This segment is blank in the Standard 837P IGuide in Medisoft)"</div>
+                <div  id="HL03">"22"</div>
+                <div id="HL04" >"(This segment is blank in the Standard 837P IGuide in Medisoft)"</div>
+            </div>
+</div>
+<!-- This is a new Segment -->
+<div class="modal" id="SBR">
+  <div class="modal-header">
+  <button data-modal-target="#modalb2" data-info-target="SBR01">SBR01</button>
+  <button data-modal-target="#modalb2" data-info-target="SBR02">SBR02</button>
+  <button data-modal-target="#modalb2" data-info-target="SBR03">SBR03</button>
+  <button data-modal-target="#modalb2" data-info-target="SBR04">SBR04</button>
+  <button data-modal-target="#modalb2" data-info-target="SBR05">SBR05</button>
+  <button data-modal-target="#modalb2" data-info-target="SBR09">SBR09</button>
+
+
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+  <div  class="modal-body" id="modalb2"></div>
+          <div class="IC">
+              <div id="SBR01">"This segment will print out "P", or "S" based one whether the Primary Insurance is responsible or the Secondary Insurance is responsible."</div>
+              <div id="SBR02" >"If the insurance responsibility is secondary, then this segment will do the following:
+                If the Patient Case has "Sponsored Dependent" as the "Relationshipt to Insured" in the Policy 2 tab, then this segment will print out "18".             
+                If the insurance responsibility is primary, then this segment will do the following:
+                If the Patient Case has "Sponsored Dependent" as the "Relationshipt to Insured" in the Policy 1 tab, then this segment will print out "18"."</div>
+              <div id="SBR03">"If the claim is Primary insurance responsible, this segment will print out the Group Number under the Policy 1 tab in the Patient Case window.  It will also replace lower case letter with upper case.
+                If the claim is Secondary insurance responsible, this segment will print out the Group Number under the Policy 2 tab in the Patient Case window.  It will also replace lower case letter with upper case.                
+                If the claim is Tertiary insurance responsible, this segment will print out the Group Number under the Policy 3 tab in the Patient Case window.  It will also replace lower case letter with upper case.              
+                If you have the word "none" or "NONE" in the Group Number field, it will NOT print that out in this segment."</div>
+              <div id="SBR04" >"If the claim is Primary insurance responsible, this segment will print out the Group Name under the Policy 1 tab in the Patient Case window.  It will also replace lower case letter with upper case.
+                If the claim is Secondary insurance responsible, this segment will print out the Group Name under the Policy 2 tab in the Patient Case window.  It will also replace lower case letter with upper case.                
+                If the claim is Tertiary insurance responsible, this segment will print out the Group Name under the Policy 3 tab in the Patient Case window.  It will also replace lower case letter with upper case.                
+                If you have the word "none" or "NONE" in the Group Name field, it will NOT print that out in this segment."</div>
+              <div id="SBR05">"If this is a Secondary Claim and the Insurance type is "Medicare" in the Insurance Edit window under the EDI/Eligibility tab then this segment will do the following:
+                If the "Medicare Secondary Reason:" is greater than "1" in the Policy 2 tab in the Patient case, then this segment will print that Medicare Secondary Reason field out.  If this field is blank in the Policy 2 tab, this segment will print out "47"."</div>
+              <div id="SBR09" >"This segment will look at the Insurance Type as defined in the EDI/Eligibility Tab in the Insurance edit window.  This segment will then print out the appropriate code based on this list:
+
+
+                Default = "CI"
+               "MEDICARE" = "MB"
+               "MEDICAID" = "MC"
+               "CHAMPUS" = "CH"
+               "CHAMPSVA" = "VA"
+               "FECA" = "OF"
+               "BLUE CROSS/SHIELD" = "BL"
+               "WORKER'S COMP" = "WC"
+               "HMO" = "HM"
+               "PPO" = "12"
+               "OTHER NON-FEDERAL" = "11"
+               "MEDICARE RISK" = "16"
+               "POS" = "13"
+               "EPO" = "14"
+               "INDEMNITY" = "15"
+               "UNKNOWN" = "ZZ"
+               "AUTOMOBILE" = "AM"
+               "DISABILITY" = "DS"
+               "LIABILITY MEDICAL" = "LM"
+               "MEDICARE PART A" = "MA"
+               "OTHER FEDERAL" = "OF"
+               "TITLE V" = "TV"
+               "MUTUALLY DEFINED" = "ZZ"
+               "FEDERAL EMPLOYEES" = "FI"
+               "COMMERCIAL INS" = "CI"
+               "DENTAL MAINTENANCE ORGANIZATION" = "17""</div>
+          </div>
+</div>
+<!-- This is a new Segment -->
+<div class="modal" id="PAT">
+  <div class="modal-header">
+  <button data-modal-target="#modalb3" data-info-target="PAT05">PAT05</button>
+  <button data-modal-target="#modalb3" data-info-target="PAT06">PAT06</button>
+  <button data-modal-target="#modalb3" data-info-target="PAT07">PAT07</button>
+  <button data-modal-target="#modalb3" data-info-target="PAT08">PAT08</button>
+  <button data-modal-target="#modalb3" data-info-target="PAT09">PAT09</button>
+  
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+
+  <div  class="modal-body" id="modalb3"></div>
+          <div class="IC">
+              <div id="PAT05">"This segment will print out "D8" if a Date of Death is inputted in the "Name, Address" tab of the Patient edit window in Medisoft."</div>
+              <div id="PAT06" >"This segment will print out the Date of Death in the "Name, Address" tab of the Patient edit window in Medisoft."</div>
+              <div id="PAT07" >"(This segment is left blank in the Medisoft Standard 837P IGuide)"</div>
+              <div id="PAT08" >"(This segment is left blank in the Medisoft Standard 837P IGuide)"</div>
+              <div id="PAT09" >"If the "Pregnant" check mark is checked in the Condition tab of the Patient Case, this segment will print out "Y".</div>
+          </div>
+</div>
+
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <img src="Box6/BoxLoc6.gif"> </img>
+</section>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+
+<section class="Contain">
+<h1>Electronic Location: Loop 2010BA</h1>
+<h2>Segments</h2>
+<div class ="segments">
+
+    <button   data-modal-target="#NM1" >Segment NM1: Insured Name</button>
+    <button   data-modal-target="#NM3">Segment NM3: Payer Address Information</button>
+    <button   data-modal-target="#NM4" >Segment NM4: Payer Geographic Locaiton</button>
+    <button   data-modal-target="#REF1">Segment REF: Payer Address Identification 1</button>
+    <button   data-modal-target="#REF2" >Segment REF: Payer Address Identification 2</button>
+    <button   data-modal-target="#REF3">Segment REF: Payer Address Identification 3</button>
+
+</section>
+
+
+
+
+
+<div class="modal" id="NM1">
+    <div class="modal-header">
+    <button data-modal-target="#modalb1" data-info-target="NM101">NM101</button>
+    <button data-modal-target="#modalb1" data-info-target="NM102">NM102</button>
+    <button data-modal-target="#modalb1" data-info-target="NM103">NM103</button>
+    <button data-modal-target="#modalb1" data-info-target="NM104">NM104</button>
+    <button data-modal-target="#modalb1" data-info-target="NM105">NM105</button>
+    <button data-modal-target="#modalb1" data-info-target="NM107">NM107</button>
+    <button data-modal-target="#modalb1" data-info-target="NM108">NM108</button>
+    <button data-modal-target="#modalb1" data-info-target="NM109">NM109</button>
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+<!-- Information will go in this body-->
+    <div  class="modal-body" id="modalb1"></div>
+            <div class="IC">
+                <div id="NM101">"IL"</div>
+                <div id="NM102" >"1"</div>
+                <div  id="NM103">This segment prints out the Last Name of the Insurance Policy Holder.
+
+                  If the insurance type is "Medicare" or "Medicare Part A", as specified in the EDI/Eligibility tab in the Insurance Edit window, then this segment will print out up to 60 characters for the Insured's Last Name.  
+                  
+                  If the insurance type is anything other than "Medicare" or "Medicare Part A", then this segment will print out the Insured's Last Name.  It will also do the following to special characters:
+                  Replace "'" with ""
+                  Replace "'" with ""
+                  Replace """ with ""
+                  Replace "~" with ""
+                  Replace "*" with ""
+                  Replace  ":" with ""
+                  Replace "-" with "" </div>
+                <div id="NM104" >This segment prints out the First Name of the Insurance Policy Holder.
+
+                  If the insurance type is "Medicare" or "Medicare Part A", as specified in the EDI/Eligibility tab in the Insurance Edit window, then this segment will print out up to 35 characters for the Insured's First Name.  
+                  
+                  If the insurance type is anything other than "Medicare" or "Medicare Part A", then this segment will print out the Insured's First Name.  It will also do the following to special characters:
+                  Replace "'" with ""
+                  Replace "'" with ""
+                  Replace """ with ""
+                  Replace "~" with ""
+                  Replace "*" with ""
+                  Replace  ":" with ""
+                  Replace "-" with ""</div>
+                  <div id="NM105">"This segment will print out the  Insurance Policy Holder's Middle Name as specified in Medisoft.
+
+                    The Policy Holder is specified in the Patient Case window."</div>
+                  
+                  <div id="NM107">"This segment will print out the  Insurance Policy Holder's Suffix as specified in Medisoft.
+
+                    The Policy Holder is specified in the Patient Case window."</div>
+                  <div id="NM108">"MI"</div>
+                  <div id="NM109">"If the Claim Responsibility is Primary, this segment will print out Policy Number 1 from the Patient Case in Medisoft.
+                    If the Claim Repsonsibility is Secondary, this segment will print out Policy Number 2.
+                    If the Claim Repsonsibility is Tertiary, this segment will print out Policy Number 3."</div>
+            </div>
+</div>
+<!-- This is a new Segment -->
+<div class="modal" id="NM3">
+  <div class="modal-header">
+  <button data-modal-target="#modalb2" data-info-target="NM301">NM301</button>
+  <button data-modal-target="#modalb2" data-info-target="NM302">NM302</button>
+
+
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+  <div  class="modal-body" id="modalb2"></div>
+          <div class="IC">
+              <div id="NM301">"This segment prints out the "Street 1" field in the Address tab in the Insurance Edit window in Medisoft."</div>
+              <div id="NM302" >"This segment prints out the "Street 2" field in the Address tab in the Insurance Edit window in Medisoft."</div>
+          </div>
+</div>
+<!-- This is a new Segment -->
+<div class="modal" id="NM4">
+  <div class="modal-header">
+  <button data-modal-target="#modalb3" data-info-target="NM401">N401</button>
+  <button data-modal-target="#modalb3" data-info-target="NM402">N402</button>
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+
+  <div  class="modal-body" id="modalb3"></div>
+          <div class="IC">
+              <div id="NM401">"This segment prints out the "City" field in the Address tab in the Insurance Edit window of Medisoft."</div>
+              <div id="NM402" >"This segment prints out the "State" field in the Address tab in the Insurance Edit window of Medisoft.<br>
+                                Possible state codes are:<br>
+                                <br>AL;AK;AZ;AR;CA;CO;CT;DE;DC;<br>
+                                FL;GA;HI;ID;IL;IN;IA;KS;KY;LA;<br>
+                                ME;MD;MA;MI;MN;MS;MO;MT;NE;NV;<br>
+                                NH;NJ;NM;NY;NC;ND;OH;OK;OR;PA;<br>
+                                PR;RI;SC;SD;TN;TX;UT;VT;VI;VA;<br>
+                                WA;WV;WI;WY;"</div>
+          </div>
+</div>
+<!-- This is a new Segment -->
+<div class="modal" id="REF1">
+  <div class="modal-header">
+  <button data-modal-target="#modalb4" data-info-target="REF01">REF01</button>
+  <button data-modal-target="#modalb4" data-info-target="REF02">REF02</button>
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+
+  <div  class="modal-body" id="modalb4"></div>
+          <div class="IC">
+              <div id="REF01">
+                "If the claim is set up to bill as group:
+                This segment will print out the Legacy 1 ID qualifier as specified in the Practice IDs tab in Practice Information in Medisoft.
+                If you specify "LU" in this field, it will print out "LU", if you specify anything else it will print out "G2" in this segment.
+                If the claims is set up to bill as individual: This segment will print out the Legacy 1 ID qualifier as specified in the Provider
+                IDs tab, in the Provider Edit window, in Medisoft.  If you specify "LU" in this field, it will print out "LU", if you specify anything
+                else it will print out "G2" in this segment."</div>
+              <div id="REF02" >"If the claim is set up to bill as group: This segment will print out the Legacy 1 ID as specified in the Practice IDs
+                tab in Practice Information in Medisoft. If the claims is set up to bill as individual: This segment will print out the Legacy 1 ID
+                as specified in the Provider IDs tab, in the Provider Edit window, in Medisoft."</div>
+          </div>
+</div>
+<!-- This is a new Segment -->
+<div class="modal" id="REF2">
+  <div class="modal-header">
+  <button data-modal-target="#modalb5" data-info-target="REF201">REF01</button>
+  <button data-modal-target="#modalb5" data-info-target="REF202">REF02</button>
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+
+  <div  class="modal-body" id="modalb5"></div>
+          <div class="IC">
+              <div id="REF201">
+                "If the claim is set up to bill as group:
+                This segment will print out the Legacy 2 ID qualifier as specified in the Practice IDs tab in Practice Information in Medisoft.
+                If you specify "LU" in this field, it will print out "LU", if you specify anything else it will print out "G2" in this segment.
+                If the claims is set up to bill as individual: This segment will print out the Legacy 2 ID qualifier as specified in the Provider
+                IDs tab, in the Provider Edit window, in Medisoft.  If you specify "LU" in this field, it will print out "LU", if you specify anything
+                else it will print out "G2" in this segment"</div>
+              <div id="REF202" >"If the claim is set up to bill as group:
+                This segment will print out the Legacy 2 ID as specified in the Practice IDs tab in Practice Information in Medisoft. If the claims
+                is set up to bill as individual:
+                This segment will print out the Legacy 2 ID as specified in the Provider IDs tab, in the Provider Edit window, in Medisoft."</div>
+          </div>
+</div>
+<!-- This is a new Segment -->
+<div class="modal" id="REF3">
+  <div class="modal-header">
+  <button data-modal-target="#modalb6" data-info-target="REF301">REF01</button>
+  <button data-modal-target="#modalb6" data-info-target="REF302">REF02</button>
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+
+  <div  class="modal-body" id="modalb6"></div>
+          <div class="IC">
+              <div id="REF301">
+                "If the claim is set up to bill as group:
+                This segment will print out the Legacy 3 ID qualifier as specified in the Practice IDs tab in Practice Information in Medisoft.
+                If you specify "LU" in this field, it will print out "LU", if you specify anything else it will print out "G2" in this segment.
+                If the claims is set up to bill as individual: This segment will print out the Legacy 3 ID qualifier as specified in the Provider
+                IDs tab, in the Provider Edit window, in Medisoft.  If you specify "LU" in this field, it will print out "LU", if you specify anything
+                else it will print out "G2" in this segment"</div>
+              <div id="REF302" >"If the claim is set up to bill as group:
+                This segment will print out the Legacy 3 ID as specified in the Practice IDs tab in Practice Information in Medisoft. 
+                If the claims is set up to bill as individual: This segment will print out the Legacy 3 ID as specified in the Provider
+                 IDs tab, in the Provider Edit window, in Medisoft. "</div>
+          </div>
+</div>
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <img src="Box1a/Box1aLoc.gif"> </img>
+</section>
+</body>
+</html>
