@@ -151,3 +151,10 @@
     opacity: 1;
     pointer-events: all;
   }
+video{
+  object-fit: fill;
+  width: 100%;
+  border-style: solid;
+  border-radius:10px;
+  border-color:darkgrey;
+}
