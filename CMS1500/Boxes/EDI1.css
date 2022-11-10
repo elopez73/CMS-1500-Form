@@ -2,7 +2,7 @@
     box-sizing: border-box;
 
   }
-  body
+  body:not(div.blank)
   {
     
     display: flex;
@@ -168,4 +168,20 @@ video{
   border-style: solid;
   border-radius:10px;
   border-color:darkgrey;
+}
+.blank
+{
+  display: block;
+  text-align: center;
+  width: 100vw;
+  margin-top: 50vh;
+color: rgb(255, 0, 0);
+  
+
+}
+.usage
+{
+  display: flex;
+  font-size: smaller;
+  justify-items: center;
 }
