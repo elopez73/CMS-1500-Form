@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2330B
+      <br>"Other Payer name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NM1" >Segment NM1: Other Insured Name</button>
+
+	 
+	  
+  </section>
+  
+  
+  
+  
+  
+  <div class="modal" id="NM1">
+      <div class="modal-header">
+     
+      <button data-modal-target="#modalb1" data-info-target="NM103">NM103</button>
+      <button data-modal-target="#modalb1" data-info-target="NM109">NM109</button>
+      
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+               
+                  <div  id="NM103">"This segment prints out the Name of the Other Insurance."</div>
+                 
+             
+                    <div id="NM109">"If this is a Secondary claim then this segment will print out the Primary Insurance's
+					"Claims Payer ID" listed in the Insurance Edit Window in the EDI/Eligiblity tab. If this is a Primary 
+					claim, then this segment will print out the Secondary Insurance's "Claims Payer ID"."</div>
+              </div>
+  </div>
+ 
+
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 9d</i>
+  <video autoplay controls muted>
+    <source src="Box9d/BoxLoc9d.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

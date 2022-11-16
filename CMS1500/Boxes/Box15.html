@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+    <section class="Contain">
+        <i>**</i>
+        <h1>Electronic Location:
+          <br>Loop 2300
+          <br>"Claim Information"
+          </h1>
+          <h2>Segments</h2>
+          <p>Medisoft pulls these dates in order of the information below from top to bottom.</p>
+          <!-- Using 3 digit number since it is the Qualifier -->
+      <div class ="segments">
+      
+          <button   data-modal-target="#DTP438" >Segment DTP: Date Similar Illness/Symptoms Onset</button>
+          <button   data-modal-target="#DTP304" >Segment DTP: Date Last Seen</button>
+          <button   data-modal-target="#DTP453" >Segment DTP: Acute Manifestation of a chronic Condition</button>
+          <button   data-modal-target="#DTP439" >Segment DTP: Accident</button>
+          <button   data-modal-target="#DTP455" >Segment DTP: Last Xray</button>
+          <button   data-modal-target="#DTP471" >Segment DTP: Prescription</button>
+          <button   data-modal-target="#DTP090" >Segment DTP: Report Start</button>
+          <button   data-modal-target="#DTP091" >Segment DTP: Report End</button>
+      
+         
+          
+      </section>
+     
+      <div class="modal" id="DTP438">
+          <div class="modal-header">
+          <button data-modal-target="#modalb1" data-info-target="DTP43801">DTP01</button>
+          <button data-modal-target="#modalb1" data-info-target="DTP43803">DTP03</button>
+          <button data-close-button class="close-button">&times;</button>
+      
+          </div>
+     
+          <div  class="modal-body" id="modalb1"></div>
+                  <div class="IC">
+                      <div id="DTP43801">"Send 438"</div>
+                      <div id="DTP43803" >"Case, Condition tab, Date of Similar Symptoms"</div>
+               
+                    
+                  </div>
+        </div>
+        <!-- New Sgement -->
+        <div class="modal" id="DTP304">
+            <div class="modal-header">
+            <button data-modal-target="#modalb2" data-info-target="DTP30401">DTP01</button>
+            <button data-modal-target="#modalb2" data-info-target="DTP30403">DTP03</button>
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+       
+            <div  class="modal-body" id="modalb2"></div>
+                    <div class="IC">
+                        <div id="DTP30401">"Send 438"</div>
+                        <div id="DTP30403" >"Case, Condition tab, Date of Similar Symptoms"</div>
+                 
+                      
+                    </div>
+          </div>
+          <!-- New Sgement -->
+        <div class="modal" id="DTP453">
+            <div class="modal-header">
+            <button data-modal-target="#modalb3" data-info-target="DTP45301">DTP01</button>
+            <button data-modal-target="#modalb3" data-info-target="DTP45303">DTP03</button>
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+       
+            <div  class="modal-body" id="modalb3"></div>
+                    <div class="IC">
+                        <div id="DTP45301">"Send 453"</div>
+                        <div id="DTP45303" >"Case, Miscellaneous tab, Date of Manifestation"</div>
+                 
+                      
+                    </div>
+          </div>
+          <!-- New Sgement -->
+        <div class="modal" id="DTP439">
+            <div class="modal-header">
+            <button data-modal-target="#modalb4" data-info-target="DTP43901">DTP01</button>
+            <button data-modal-target="#modalb4" data-info-target="DTP43903">DTP03</button>
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+       
+            <div  class="modal-body" id="modalb4"></div>
+                    <div class="IC">
+                        <div id="DTP43901">"Send 439"</div>
+                        <div id="DTP43903" >"Case, Condition tab, Injury/Illness/LMP Date"</div>
+                 
+                      
+                    </div>
+          </div>
+          <!-- New Sgement -->
+        <div class="modal" id="DTP455">
+            <div class="modal-header">
+            <button data-modal-target="#modalb5" data-info-target="DTP45501">DTP01</button>
+            <button data-modal-target="#modalb5" data-info-target="DTP45503">DTP03</button>
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+       
+            <div  class="modal-body" id="modalb5"></div>
+                    <div class="IC">
+                        <div id="DTP45501">"Send 455"</div>
+                        <div id="DTP45503" >"Case, Condition tab, Last X-Ray Date"</div>
+                 
+                      
+                    </div>
+          </div>
+          <!-- New Sgement -->
+        <div class="modal" id="DTP471">
+            <div class="modal-header">
+            <button data-modal-target="#modalb6" data-info-target="DTP47101">DTP01</button>
+            <button data-modal-target="#modalb6" data-info-target="DTP47103">DTP03</button>
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+       
+            <div  class="modal-body" id="modalb6"></div>
+                    <div class="IC">
+                        <div id="DTP47101">"Send 455"</div>
+                        <div id="DTP47103" >"Case, Condition tab, Last X-Ray Date"</div>
+                 
+                      
+                    </div>
+          </div>
+          <!-- New Sgement -->
+        <div class="modal" id="DTP091">
+            <div class="modal-header">
+            <button data-modal-target="#modalb7" data-info-target="DTP09101">DTP01</button>
+            <button data-modal-target="#modalb7" data-info-target="DTP09103">DTP03</button>
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+       
+            <div  class="modal-body" id="modalb7"></div>
+                    <div class="IC">
+                        <div id="DTP09101">"Send Send 091
+                            "</div>
+                        <div id="DTP09103" >"Case, Condition tab, Date Relinquished Care"</div>
+                 
+                      
+                    </div>
+          </div>
+          <!-- New Sgement -->
+        <div class="modal" id="DTP090">
+            <div class="modal-header">
+            <button data-modal-target="#modalb8" data-info-target="DTP09001">DTP01</button>
+            <button data-modal-target="#modalb8" data-info-target="DTP09003">DTP03</button>
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+       
+            <div  class="modal-body" id="modalb8"></div>
+                    <div class="IC">
+                        <div id="DTP09001">"Send 090 in the ANSI 4010.
+
+                            In the ANSI 5010, if Date Assumed Care is populated in the Case Condition tab, send 090.
+                            
+                            If Date Relinquished Care is populated in the case Condition tab, send 091.  
+                            
+                            If both are populated, send 090."</div>
+                        <div id="DTP09003" >"Case, Condition tab, Date Assumed Care.
+
+                            In the ANSI 5010, if Date Assumed Care is populated in the Case Condition tab, send that date in the format specified..
+                            
+                            If Date Relinquished Care is populated in the case Condition tab, send that date in the format specified.  
+                            
+                            If both are populated, send the Date Assumed Care."</div>
+                 
+                      
+                    </div>
+          </div>
+          
+          
+
+  
+
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 15</i>
+  <video autoplay controls muted>
+    <source src="Box15/BoxLoc15.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

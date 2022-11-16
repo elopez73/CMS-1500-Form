@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+    <section class="Contain">
+        <i>*Loops will vary by Payer*</i>
+        <h1>Electronic Location:
+          <br>Loop 2300
+          <br>"Claim Information"
+          </h1>
+          <h2>Segments</h2>
+          <!-- Using 360 since it is the Qualifier -->
+      <div class ="segments">
+      
+          <button   data-modal-target="#DTP439" >Segment DTP: Date of Accident</button>
+          <button   data-modal-target="#DTP431" >Segment DTP: Onset of Current Illness/Symptom</button>
+        
+    
+         
+          
+      </section>
+     
+      <div class="modal" id="DTP439">
+          <div class="modal-header">
+          <button data-modal-target="#modalb1" data-info-target="DTP4391">DTP01</button>
+          <button data-modal-target="#modalb1" data-info-target="DTP4393">DTP03</button>
+          <button data-close-button class="close-button">&times;</button>
+      
+          </div>
+     
+          <div  class="modal-body" id="modalb1"></div>
+                  <div class="IC">
+                      <div id="DTP4391">"Send 439"</div>
+                      <div id="DTP4393" >"Case, Condition tab, Injury/Illness/LMP Date"</div>
+               
+                    
+                  </div>
+        </div>
+ <!-- New Sgement -->
+        <div class="modal" id="DTP431">
+            <div class="modal-header">
+            <button data-modal-target="#modalb2" data-info-target="DTP4311">DTP01</button>
+            <button data-modal-target="#modalb2" data-info-target="DTP4313">DTP03</button>
+  
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+        
+            <div  class="modal-body" id="modalb2"></div>
+                    <div class="IC">
+                        <div id="DTP4311">"Send 431"</div>
+                        <div id="DTP4313" >"Case, Condition tab, Injury/Illness/LMP Date"</div>
+                 
+                      
+                    </div>
+          </div>
+      
+
+  
+
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 14</i>
+  <video autoplay controls muted>
+    <source src="Box14/BoxLoc14.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

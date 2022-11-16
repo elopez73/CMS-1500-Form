@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+    <section class="Contain">
+        <i>*Loops will vary by Payer*</i>
+        <h1>Electronic Location:
+          <br>Loop 2300
+          <br>"Claim Information"
+          </h1>
+          <h2>Segments</h2>
+      <div class ="segments">
+      
+          <button   data-modal-target="#CLM" >Segment CLM: Health Claim</button>
+    
+         
+          
+      </section>
+     
+      <div class="modal" id="CLM">
+          <div class="modal-header">
+        
+           <button data-modal-target="#modalb1" data-info-target="CLM08">CLM08</button>
+          <button data-modal-target="#modalb1" data-info-target="CLM10">CLM10</button>
+          <button data-close-button class="close-button">&times;</button>
+      
+          </div>
+      <!-- Information will go in this body-->
+          <div  class="modal-body" id="modalb1"></div>
+                  <div class="IC">
+                     
+                      <div id="CLM08">If Case, Policy 1 or Policy 2 tab, Assignment of Benefits/Accept Assignment is checked, send Y. If it is not checked, send N.
+
+                        Send W if the patient refuses to accept assignment</div>
+                      <div id="CLM10">"If Case, Policy 1 or Policy 2 tab, Accept Assignment is checked and Patient, Other Information tab, Signature on File is checked, then send B.
+    
+                            If only Patient, Other Information tab, Signature on File is checked, then send S.
+    
+                            If only Case, Policy 1 tab, Accept Assignment is checked, then send M.  
+    
+                            If only Provider, Address tab, Signature on File is checked, then send P."</div>
+                    
+                  </div>
+      </div>
+  
+      <section class="Contain">
+        <i>*Loops will vary by Payer*</i>
+        <h1>Electronic Location:
+          <br>Loop 2320
+          <br>"Other Insured Info"
+          </h1>
+          <h2>Segments</h2>
+      <div class ="segments">  
+          <button   data-modal-target="#OI" >Segment OI: Other Insured Coverage Information</button>
+      </section>
+      
+      <!-- This is a new Segment -->
+      <div class="modal" id="OI">
+        <div class="modal-header">
+
+        <button data-modal-target="#modalb10" data-info-target="OI03">OI03</button>
+        <button data-close-button class="close-button">&times;</button>
+      
+        </div>
+      
+        <div  class="modal-body" id="modalb10"></div>
+                <div class="IC">
+                    
+                    <div id="OI03" >"If Case, Accept Assignment (Policy 1 or 2) is true then send Y.
+
+                        Otherwise, send N.
+                        
+                        In the ANSI 5010, if Patient Refuses is selected, send W.
+                        "</div>
+                </div>
+      </div>
+
+
+        
+      
+        
+      
+  
+      
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 13</i>
+  <video autoplay controls muted>
+    <source src="Box13/BoxLoc13.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

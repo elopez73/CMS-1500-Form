@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+
+    <section class="Contain">
+        <i>*Loops will vary by Payer*</i>
+        <h1>Electronic Location:
+          <br>Loop 2320
+          <br>"Other Insured Info"
+          </h1>
+          
+          <h2>Segments</h2>
+      <div class ="segments">
+      
+          <button   data-modal-target="#DMG" >Segment SBR: Other Insured Info</button>
+          
+
+      
+      </section>
+      
+      
+      
+      
+      
+    <div class="modal" id="DMG">
+        <div class="modal-header">
+          <button data-modal-target="#modalb6" data-info-target="DMG01">DMG01</button>
+
+        
+        <button data-close-button class="close-button">&times;</button>
+        </div>
+ 
+        <div  class="modal-body" id="modalb6"></div>
+                <div class="IC">
+                    
+                    <div  id="DMG01">Send D8</div>
+        
+                     
+                </div>
+       
+    </div>
+
+
+
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 11a</i>
+  <video autoplay controls muted>
+    <source src="Box11a/BoxLoc11a.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

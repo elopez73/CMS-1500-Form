@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2300
+      <br>"Claim Information"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#CLM" >Segment CLM: Health Claim</button>
+
+	 
+	  
+  </section>
+ 
+  <div class="modal" id="CLM">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="CLM01">CLM01</button>
+      <button data-modal-target="#modalb1" data-info-target="CLM02">CLM02</button>
+      <button data-modal-target="#modalb1" data-info-target="CLM03">CLM03</button>
+      <button data-modal-target="#modalb1" data-info-target="CLM04">CLM04</button>
+	
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="CLM01">"If Case, Condition tab, Accident section, Related to is Auto, then send AA.
+					If Case, Condition tab, Employment Related box is checked, then send EM.
+					If Case, Condition tab, Accident section, Related to is Yes, then send OA.
+					UNIS: If sending EM, send blanks instead."</div>
+                  <div id="CLM02" >"Not used In the ANSI 5010, if CLM11-1 contains either AA or OA AND Case Condition
+				  Tab Employment Related box is checked, then send EM."</div>
+                  <div  id="CLM03">"Not used"</div>
+                  <div id="CLM04">"Case, Condition tab, Accident section, State"</div>
+				  
+                
+              </div>
+  </div>
+
+
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 10a</i>
+  <video autoplay controls muted>
+    <source src="Box10a/BoxLoc10a.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

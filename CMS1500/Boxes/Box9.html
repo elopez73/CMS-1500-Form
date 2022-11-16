@@ -22,11 +22,7 @@
   <div class ="segments">
   
       <button   data-modal-target="#NM1" >Segment NM1: Other Insured Name</button>
-      <button   data-modal-target="#NM3">Segment N3: Other Insured Address Information</button>
-      <button   data-modal-target="#NM4" >Segment N4: Other Insured Geographic Locaiton</button>
-      <button   data-modal-target="#DMG">Segment REF: Other Insured Additional Identification 1</button>
-      <button   data-modal-target="#REF2" >Segment REF: Other Insured Additional Identification 2</button>
-      <button   data-modal-target="#REF3" >Segment REF: Other Insured Additional Identification 3</button>
+      
   
   </section>
   
@@ -36,22 +32,19 @@
   
   <div class="modal" id="NM1">
       <div class="modal-header">
-      <button data-modal-target="#modalb1" data-info-target="NM101">NM101</button>
-      <button data-modal-target="#modalb1" data-info-target="NM102">NM102</button>
+      
       <button data-modal-target="#modalb1" data-info-target="NM103">NM103</button>
       <button data-modal-target="#modalb1" data-info-target="NM104">NM104</button>
       <button data-modal-target="#modalb1" data-info-target="NM105">NM105</button>
       <button data-modal-target="#modalb1" data-info-target="NM107">NM107</button>
-      <button data-modal-target="#modalb1" data-info-target="NM108">NM108</button>
-      <button data-modal-target="#modalb1" data-info-target="NM109">NM109</button>
+      
       <button data-close-button class="close-button">&times;</button>
   
       </div>
   <!-- Information will go in this body-->
       <div  class="modal-body" id="modalb1"></div>
               <div class="IC">
-                  <div id="NM101">"IL"</div>
-                  <div id="NM102" >"1"</div>
+                 
                   <div  id="NM103">This segment prints out the Last Name of the Insurance Policy Holder.
   
                     If the insurance type is "Medicare" or "Medicare Part A", as specified in the EDI/Eligibility tab in the Insurance Edit window, then this segment will print out up to 60 characters for the Insured's Last Name.  
@@ -83,98 +76,10 @@
                     <div id="NM107">"This segment will print out the  Insurance Policy Holder's Suffix as specified in Medisoft.
   
                       The Policy Holder is specified in the Patient Case window."</div>
-                    <div id="NM108">"MI"</div>
-                    <div id="NM109">"If the Claim Responsibility is Primary, this segment will print out Policy Number 1 from the Patient Case in Medisoft.
-                      If the Claim Repsonsibility is Secondary, this segment will print out Policy Number 2.
-                      If the Claim Repsonsibility is Tertiary, this segment will print out Policy Number 3."</div>
+                   
               </div>
   </div>
-  <!-- This is a new Segment -->
-  <div class="modal" id="NM3">
-    <div class="modal-header">
-    <button data-modal-target="#modalb2" data-info-target="NM301">NM301</button>
-    <button data-modal-target="#modalb2" data-info-target="NM302">NM302</button>
   
-  
-    <button data-close-button class="close-button">&times;</button>
-  
-    </div>
-    <div  class="modal-body" id="modalb2"></div>
-            <div class="IC">
-                <div id="NM301">"This segment prints out the "Street 1" field in the Address tab in the Insurance Edit window in Medisoft."</div>
-                <div id="NM302" >"This segment prints out the "Street 2" field in the Address tab in the Insurance Edit window in Medisoft."</div>
-            </div>
-  </div>
-  <!-- This is a new Segment -->
-  <div class="modal" id="NM4">
-    <div class="modal-header">
-    <button data-modal-target="#modalb3" data-info-target="NM401">N401</button>
-    <button data-modal-target="#modalb3" data-info-target="NM402">N402</button>
-    <button data-modal-target="#modalb3" data-info-target="NM403">N403</button>
-    <button data-modal-target="#modalb3" data-info-target="NM404">N404</button>
-    <button data-close-button class="close-button">&times;</button>
-  
-    </div>
-  
-    <div  class="modal-body" id="modalb3"></div>
-        <div class="IC">
-                <div id="NM401">"This segment prints out the Insurance Policy Holder's City name.
-                  The Policy Holder is defined in the Patient Case in the Policy tab."</div>
-                <div id="NM402" >"This segment prints out the Insurance Policy Holder's State Code.
-                The Policy Holder is defined in the Patient Case in the Policy tab."</div>
-            
-            <div id="NM403" >"This segment prints out the Insurance Policy Holder's Zip Code, it will remove any spaces [Chr(32)] with "".
-              The Policy Holder is defined in the Patient Case in the Policy tab."</div>
-          
-          <div id="NM404" >"This segment prints out the Insurance Policy Holder's State Code.
-            The Policy Holder is defined in the Patient Case in the Policy tab."</div>
-      </div>
-  </div>
-  <!-- This is a new Segment -->
-  <div class="modal" id="DMG">
-    <div class="modal-header">
-    <button data-modal-target="#modalb4" data-info-target="DMG01">REF01</button>
-    <button data-modal-target="#modalb4" data-info-target="DMG02">REF02</button>
-    <button data-close-button class="close-button">&times;</button>
-  
-    </div>
- 
-  <div  class="modal-body" id="modalb4"></div>
-        <div class="IC">
-                <div id="DMG01">"(This segment is blank in the 837P Standard IGuide)"</div>
-                <div id="DMG02" >"(This segment is blank in the 837P Standard IGuide)"</div>
-        </div>
-  </div>
- <!-- This is a new Segment -->
-  <div class="modal" id="REF2">
-    <div class="modal-header">
-    <button data-modal-target="#modalb5" data-info-target="REF201">REF01</button>
-    <button data-modal-target="#modalb5" data-info-target="REF202">REF02</button>
-    <button data-close-button class="close-button">&times;</button>
-  
-    </div>
-  
-    <div  class="modal-body" id="modalb5"></div>
-            <div class="IC">
-                <div id="REF201">"(This segment is blank in the 837P Standard IGuide)"</div>
-                <div id="REF202" >"(This segment is blank in the 837P Standard IGuide)"</div>
-            </div>
-  </div>
-   <!-- This is a new Segment -->
-    <div class="modal" id="REF3">
-      <div class="modal-header">
-      <button data-modal-target="#modalb6" data-info-target="REF301">REF01</button>
-      <button data-modal-target="#modalb6" data-info-target="REF302">REF02</button>
-      <button data-close-button class="close-button">&times;</button>
-    
-      </div>
-    
-      <div  class="modal-body" id="modalb6"></div>
-              <div class="IC">
-                  <div id="REF301">"(This segment is blank in the 837P Standard IGuide)"</div>
-                  <div id="REF302" >"(This segment is blank in the 837P Standard IGuide)"</div>
-              </div>
-    </div>
   
 
 <div id="overlay"></div>

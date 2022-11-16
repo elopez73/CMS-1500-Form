@@ -15,85 +15,24 @@
   <section class="Contain">
     <i>*Loops will vary by Payer*</i>
     <h1>Electronic Location:
-      <br>Loop 2010BA
+      <br>Loop 2010BAeeeeeeeee
       <br>"Insured name"
       </h1>
       <h2>Segments</h2>
   <div class ="segments">
   
-      <button   data-modal-target="#NM1" >Segment NM1: Insured Name</button>
-      <button   data-modal-target="#NM3">Segment NM3: Insured Address Information</button>
-      <button   data-modal-target="#NM4" >Segment NM4: Insured Geographic Locaiton</button>
-      <button   data-modal-target="#DMG">Segment DMG: Insured Demographic Location</button>
-      <button   data-modal-target="#REF2" >Segment REF: Insured Property and Casualty Claim Number</button>
+      
+      <button   data-modal-target="#NM3">Segment N3: Insured Address Information</button>
+      <button   data-modal-target="#NM4" >Segment N4: Insured Geographic Locaiton</button>
+      
       
   
   </section>
-  
-  
-  
-  
-  
-  <div class="modal" id="NM1">
-      <div class="modal-header">
-      <button data-modal-target="#modalb1" data-info-target="NM101">NM101</button>
-      <button data-modal-target="#modalb1" data-info-target="NM102">NM102</button>
-      <button data-modal-target="#modalb1" data-info-target="NM103">NM103</button>
-      <button data-modal-target="#modalb1" data-info-target="NM104">NM104</button>
-      <button data-modal-target="#modalb1" data-info-target="NM105">NM105</button>
-      <button data-modal-target="#modalb1" data-info-target="NM107">NM107</button>
-      <button data-modal-target="#modalb1" data-info-target="NM108">NM108</button>
-      <button data-modal-target="#modalb1" data-info-target="NM109">NM109</button>
-      <button data-close-button class="close-button">&times;</button>
-  
-      </div>
-  <!-- Information will go in this body-->
-      <div  class="modal-body" id="modalb1"></div>
-              <div class="IC">
-                  <div id="NM101">"IL"</div>
-                  <div id="NM102" >"1"</div>
-                  <div  id="NM103">This segment prints out the Last Name of the Insurance Policy Holder.
-  
-                    If the insurance type is "Medicare" or "Medicare Part A", as specified in the EDI/Eligibility tab in the Insurance Edit window, then this segment will print out up to 60 characters for the Insured's Last Name.  
-                    
-                    If the insurance type is anything other than "Medicare" or "Medicare Part A", then this segment will print out the Insured's Last Name.  It will also do the following to special characters:
-                    Replace "'" with ""
-                    Replace "'" with ""
-                    Replace """ with ""
-                    Replace "~" with ""
-                    Replace "*" with ""
-                    Replace  ":" with ""
-                    Replace "-" with "" </div>
-                  <div id="NM104" >This segment prints out the First Name of the Insurance Policy Holder.
-  
-                    If the insurance type is "Medicare" or "Medicare Part A", as specified in the EDI/Eligibility tab in the Insurance Edit window, then this segment will print out up to 35 characters for the Insured's First Name.  
-                    
-                    If the insurance type is anything other than "Medicare" or "Medicare Part A", then this segment will print out the Insured's First Name.  It will also do the following to special characters:
-                    Replace "'" with ""
-                    Replace "'" with ""
-                    Replace """ with ""
-                    Replace "~" with ""
-                    Replace "*" with ""
-                    Replace  ":" with ""
-                    Replace "-" with ""</div>
-                    <div id="NM105">"This segment will print out the  Insurance Policy Holder's Middle Name as specified in Medisoft.
-  
-                      The Policy Holder is specified in the Patient Case window."</div>
-                    
-                    <div id="NM107">"This segment will print out the  Insurance Policy Holder's Suffix as specified in Medisoft.
-  
-                      The Policy Holder is specified in the Patient Case window."</div>
-                    <div id="NM108">"MI"</div>
-                    <div id="NM109">"If the Claim Responsibility is Primary, this segment will print out Policy Number 1 from the Patient Case in Medisoft.
-                      If the Claim Repsonsibility is Secondary, this segment will print out Policy Number 2.
-                      If the Claim Repsonsibility is Tertiary, this segment will print out Policy Number 3."</div>
-              </div>
-  </div>
   <!-- This is a new Segment -->
   <div class="modal" id="NM3">
     <div class="modal-header">
-    <button data-modal-target="#modalb2" data-info-target="NM301">NM301</button>
-    <button data-modal-target="#modalb2" data-info-target="NM302">NM302</button>
+    <button data-modal-target="#modalb2" data-info-target="NM301">N301</button>
+    <button data-modal-target="#modalb2" data-info-target="NM302">N302</button>
   
   
     <button data-close-button class="close-button">&times;</button>
@@ -111,7 +50,7 @@
     <button data-modal-target="#modalb3" data-info-target="NM401">N401</button>
     <button data-modal-target="#modalb3" data-info-target="NM402">N402</button>
     <button data-modal-target="#modalb3" data-info-target="NM403">N403</button>
-    <button data-modal-target="#modalb3" data-info-target="NM404">N404</button>
+
     <button data-close-button class="close-button">&times;</button>
   
     </div>
@@ -126,49 +65,10 @@
             <div id="NM403" >"This segment prints out the Insurance Policy Holder's Zip Code, it will remove any spaces [Chr(32)] with "".
               The Policy Holder is defined in the Patient Case in the Policy tab."</div>
           
-          <div id="NM404" >"This segment prints out the Insurance Policy Holder's State Code.
-            The Policy Holder is defined in the Patient Case in the Policy tab."</div>
+          
       </div>
   </div>
-  <!-- This is a new Segment -->
-  <div class="modal" id="DMG">
-    <div class="modal-header">
-    <button data-modal-target="#modalb4" data-info-target="DMG01">DMG01</button>
-    <button data-modal-target="#modalb4" data-info-target="DMG02">DMG02</button>
-    <button data-modal-target="#modalb4" data-info-target="DMG03">DMG03</button>
-    <button data-close-button class="close-button">&times;</button>
   
-    </div>
-  
-  <div  class="modal-body" id="modalb4"></div>
-        <div class="IC">
-                <div id="DMG01">"D8"</div>
-                <div id="DMG02" >"This segment prints out the Insurance Policy Holder's Date of Birth.
-                 The Policy Holder is defined in the Patient Case in the Policy tab."</div>
-            
-            <div id="DMG03" >"This segment prints out the Insurance Policy Holder's Gender.
-              If they are set to MALE, then this segment will print out "M"
-              If they are set to FEMALE, then this segment will print out "F"
-              If they are set to UNKNOWN, then this segment will print out "U"
-              The Policy Holder is defined in the Patient Case in the Policy tab."</div>
-        </div>
-  </div>
-  <!-- This is a new Segment -->
-  <div class="modal" id="REF2">
-    <div class="modal-header">
-    <button data-modal-target="#modalb5" data-info-target="REF201">REF01</button>
-    <button data-modal-target="#modalb5" data-info-target="REF202">REF02</button>
-    <button data-close-button class="close-button">&times;</button>
-  
-    </div>
-  
-    <div  class="modal-body" id="modalb5"></div>
-            <div class="IC">
-                <div id="REF201">"Y4"</div>
-                <div id="REF202" >"If this is a secondary claim, it will print out the "Claim Number:" field in the Policy 2 tab in the Patient Case.
-                  If this is a primary claim, it will print out the "Claim Number:" field in the Policy 1 tab in the Patient Case."</div>
-            </div>
-  </div>
 
 <div id="overlay"></div>
 </div>
