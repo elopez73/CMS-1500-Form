@@ -35,32 +35,46 @@ window.addEventListener('scroll',()=>{
 var body = document.body,timer;
 window.addEventListener('scroll', function() {
    clearTimeout(timer);
+   const Blank = document.getElementById("Blank");
   if(!body.classList.contains('disable-hover')) {
     body.classList.add('disable-hover')
+    Blank.classList.remove("active");
+    box.classList.remove("active");
+   
   }
    timer = setTimeout(function(){
     body.classList.remove('disable-hover')
-  },100);
+  
+  },50);
 }, false);
+
+
 window.onclick = function(event)
 {
-  if (event.target == exit) {
-    modal.style.display = "none";
+const Blank = document.getElementById("Blank");
+  if (event.target == Blank) {
+        Blank.classList.remove("active");
+    
   }
-}
-function showFunction(pathmodalimage)
-{
+  const box = document.getElementById("box");
+  if (event.target == box) {
+        box.classList.remove("active");
+    
+  }
 
-        var orgiginalSrc =  pathmodalimage;
-        modalImg.src =`${orgiginalSrc}`
-        modal.style.display = ("inline-flex");
-};
-function seturl(link)
-{
-        EDI.setAttribute("href", link);
 }
-function settext(link)
+function openBlank()
 {
-        Content.innerHTML = link;
-        Content.setAttribute("")
+        const blank = document.getElementById("Blank");
+        if (blank == null) return;
+        blank.classList.toggle("active")
+
+}
+
+function openBox()
+{
+        const box = document.getElementById("box");
+        if (box == null) return;
+        box.classList.toggle("active")
+
 }

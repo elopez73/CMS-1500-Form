@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+<div class ="Loops">
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2310A
+      <br>"Referring Provider Name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NM01" >Segment NM1: Referring Provider Name</button>
+     
+  </section>  
+   
+  
+  
+  
+  
+  
+  <div class="modal" id="NM01">
+      <div class="modal-header">
+      <button data-modal-target="#modalb10" data-info-target="NM109!">NM109</button>
+      
+     
+     
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb10"></div>
+              <div class="IC">
+                    <div id="NM109!">This segment will print out the Referring Provider's NPI number as found under the Referring Provider IDs window, if it's NOT empty.
+
+                        (The Referring Provider is specified in the Account tab of the Patient Case).</div>
+
+                
+              </div>
+  </div>
+ <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2420E
+      <br>"Ordering Physician Name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NM1" >Segment NM1: Referring Provider Name</button>
+  </section>
+  
+  <div class="modal" id="NM1">
+      <div class="modal-header">
+      
+      <button data-modal-target="#modalb1" data-info-target="NM109">NM109</button>
+     
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+
+                    <div id="NM109">If the Insurance Carriers window, EDI/Eligibility tab, Send Ordering Provider in Loop 2420E is selected, and if the Referring Providers window, Referring Provider IDs tab grid entry, National Provider ID has a value, then send the value in that field.
+
+ 
+
+                        If EDI Receiver, Entity Type is not Non-Person, then send Provider, SSN or Federal Tax ID
+                        
+                        Otherwise, send Practice, Federal Tax ID.
+                        
+                        Exception:
+                        
+                        If ORDMD is entered in the Alternate Carrier ID field, then send the referring provider NPI number--Referring Provider, Default Pins tab, National Identifier.
+                        </div>
+                    
+                    
+                   
+              </div>
+        </div>
+
+  
+</div>
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 17</i>
+  <video autoplay controls muted>
+    <source src="Box17/BoxLoc17.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

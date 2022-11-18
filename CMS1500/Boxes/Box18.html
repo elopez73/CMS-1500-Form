@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+    <section class="Contain">
+        <i>*Loops will vary by Payer*</i>
+        <h1>Electronic Location:
+          <br>Loop 2300
+          <br>"Claim Information"
+          </h1>
+          <h2>Segments</h2>
+          <!-- Using 360 since it is the Qualifier -->
+      <div class ="segments">
+      
+          <button   data-modal-target="#DTP435" >Segment DTP: Date Admitted</button>
+          <button   data-modal-target="#DTP096" >Segment DTP: Date Discharged</button>
+        
+    
+         
+          
+      </section>
+     
+      <div class="modal" id="DTP435">
+          <div class="modal-header">
+          <button data-modal-target="#modalb1" data-info-target="DTP4351">DTP01</button>
+          <button data-modal-target="#modalb1" data-info-target="DTP4353">DTP03</button>
+          <button data-close-button class="close-button">&times;</button>
+      
+          </div>
+     
+          <div  class="modal-body" id="modalb1"></div>
+                  <div class="IC">
+                      <div id="DTP4351">"Send 435"</div>
+                      <div id="DTP4353" >"Date
+                        Case, Condition tab, Dates section, Hospitalization From
+                        "</div>
+               
+                    
+                  </div>
+        </div>
+ <!-- New Sgement -->
+        <div class="modal" id="DTP096">
+            <div class="modal-header">
+            <button data-modal-target="#modalb2" data-info-target="DTP0961">DTP01</button>
+            <button data-modal-target="#modalb2" data-info-target="DTP0963">DTP03</button>
+  
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+        
+            <div  class="modal-body" id="modalb2"></div>
+                    <div class="IC">
+                        <div id="DTP0961">"Send 096"</div>
+                        <div id="DTP0963" >"Case, Condition tab, Dates section, Hospitalization To"</div>
+                 
+                      
+                    </div>
+          </div>
+      
+
+  
+
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 18</i>
+  <video autoplay controls muted>
+    <source src="Box18/BoxLoc18.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>
