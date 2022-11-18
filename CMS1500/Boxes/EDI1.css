@@ -7,7 +7,7 @@
 body:not(div.blank) {
 	display: flex;
 	flex-direction: row;
-
+  scroll-behavior: smooth;
 	align-content: center;
 	align-items: top;
 	background-color: rgb(229, 237, 241);
