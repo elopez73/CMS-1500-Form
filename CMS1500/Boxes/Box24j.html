@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+<div class="Loops">
+  <section class="Contain">
+	<i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2310B
+      <br>"Rendering Provider Name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NM0" >Segment NM1: Rendering Provider Name</button>
+	 
+	
+   </section>
+  <div class="modal" id="NM0">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="NM001">NM101</button>
+      <button data-modal-target="#modalb1" data-info-target="NM008">NM108</button>
+      <button data-modal-target="#modalb1" data-info-target="NM009">NM109</button>
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="NM001">"Send 82"</div>
+                  <div id="NM008">"If an NPI number is present at the provider or practice level, XX is sent.
+                    If a value is not present but the employer identification number is, then 24 is sent.                    
+                    If this value is not present but the social security number is present, then 34 is sent.         
+                    The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.                   
+                    If Provider, Default Pins, National Identifier has a value, send XX.                    
+                    If Provider, Federal Tax ID Indicator is checked, then send 24.                   
+                    Otherwise, send 34."</div>
+                  <div id="NM009">"If an NPI number is present at the provider or practice level, send that value.
+                    If a value is not present but the employer identification number is, then send that value.                    
+                    If this value is not present but the social security number is present, then send that value.         
+                    The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.                     
+                    If Provider, Default Pins, National Identifier has a value, send the value in that field.                   
+                    Provider, SSN/Federal Tax ID"</div>
+                 
+              
+              </div>
+  </div>
+  <section class="Contain">
+	<i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2420A
+      <br>"Rendering Provider Name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NM1" >Segment NM1: Rendering Provider Name</button>
+	 
+	
+   </section>
+  <div class="modal" id="NM1">
+      <div class="modal-header">
+      <button data-modal-target="#modalb2" data-info-target="NM101">NM101</button>
+      <button data-modal-target="#modalb2" data-info-target="NM108">NM108</button>
+      <button data-modal-target="#modalb2" data-info-target="NM109">NM109</button>
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+
+      <div  class="modal-body" id="modalb2"></div>
+              <div class="IC">
+                  <div id="NM101">"Send 82"</div>
+                  <div id="NM108">"If an NPI number is present at the provider or practice level, XX is sent.
+                    If a value is not present but the employer identification number is, then 24 is sent.                    
+                    If this value is not present but the social security number is present, then 34 is sent.       
+                    The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.                   
+                    If Provider, National Identifier has a value, send XX.
+                    If Provider, Federal Tax ID Indicator is selected, then send 24.  Otherwise, send 34."</div>
+                  <div id="NM109">"If an NPI number is present at the provider or practice level, send that value.
+                    If a value is not present but the employer identification number is, then send that value.                   
+                    If this value is not present but the social security number is present, then send that value.         
+                    The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.                    
+                    If Provider, National Identifier has a value, send the value.                     
+                    Otherwise, send Provider, SSN or Federal Tax ID."</div>
+                 
+              
+              </div>
+  </div>
+
+</div>
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 24j</i>
+  <video autoplay controls muted>
+    <source src="Box24j/BoxLoc24j.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

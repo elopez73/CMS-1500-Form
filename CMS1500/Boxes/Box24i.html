@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+<div class="Loops">
+  <section class="Contain">
+	<i>*Payers May Request Different Loops*</i>
+    <h1>Electronic Location:
+      <br>Loop 2310B
+      <br>"Rendering Provider Name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#REF" >Segment NM1: Rendering Provider Secondary ID</button>
+	 
+	
+   </section>
+  <div class="modal" id="REF">
+      <div class="modal-header">
+      <button data-modal-target="#modalb10" data-info-target="REF101">REF01</button>
+      
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+
+      <div  class="modal-body" id="modalb10"></div>
+              <div class="IC">
+                  <div id="REF101">"If Providers window, Provider IDs grid, Legacy Identifier 1 is selected, send the qualifier (box next to the Legacy Identifer 1 field).`e
+					The appropriate grid entry  is selected by the rules engine.
+					NOTE: if the Legacy Identifier 2 or Legacy Identifier 3 are selected, their respective qualifiers are sent in a successive REF01s.
+					If Provider, Federal Tax ID Indicator is selected, then send EI.
+					Otherwise, send SY"</div>
+                 
+              
+              </div>
+  </div>
+  <!-- New Loop-->
+  <section class="Contain">
+	<i>*Payers May Request Different Loops*</i>
+    <h1>Electronic Location:
+      <br>Loop 2420A
+      <br>"Rendering Provider Name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#REF1" >Segment NM1: Rendering Provider Secondary ID</button>
+	 
+	
+   </section>
+  <div class="modal" id="REF1">
+      <div class="modal-header">
+      <button data-modal-target="#modalb11" data-info-target="REF01">REF01</button>
+      
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+
+      <div  class="modal-body" id="modalb11"></div>
+              <div class="IC">
+                  <div id="REF01">"If the Referring Providers window, Referring Provider IDs tab grid entry, Legacy Identifier 1 button is selected, then send the selected Legacy 1 qualifier.
+                    If Provider, Federal Tax ID Indicator is selected, then send EI.                    
+                    Otherwise, send SY."</div>
+                 
+              
+              </div>
+  </div>
+</div>
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 24a</i>
+  <video autoplay controls muted>
+    <source src="Box24a/BoxLoc24a.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>
