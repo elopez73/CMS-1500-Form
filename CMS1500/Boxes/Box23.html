@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+  <div class ="Loops">
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2300
+      <br>"Claim Information"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+
+      <button   data-modal-target="#REFG1" >Segment REF: QIO Prior Authorization Number</button>
+      <button   data-modal-target="#REFLX" >Segment REF:<br> Investigational Device Exemption Number</button>
+      <button   data-modal-target="#REF1J" >Segment REF: Care Plan Oversight Number</button>
+      <button   data-modal-target="#REFX4" >Segment REF: CLIA Certification Number</button>
+	 
+	  
+  </section>
+ 
+  <div class="modal" id="REFG1">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="REFG101">REF01</button>
+      <button data-modal-target="#modalb1" data-info-target="REFG102">REF02</button>
+      
+      
+      
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="REFG101">"If Case, Referral Access Number has a value blank, then send 9F.
+
+                    For the ANSI 5010, hardcode G1."</div>
+                  <div id="REFG102">"If Case, Referral Access Number has a value, send that value.
+
+                    FLMC: If the Referring Provider, Default PINs tab, Medicaid PIN contains MP in the first positions, send everything after the MP
+                    
+                    In the ANSI 5010, if Case/Miscellaneous tab, Prior Authorization Number is Populated, create this segment."</div>
+                 
+                 
+                
+              </div>
+  </div>
+  <!-- New Seg -->
+  <div class="modal" id="REFLX">
+    <div class="modal-header">
+    <button data-modal-target="#modalb2" data-info-target="REFLX01">REF01</button>
+    <button data-modal-target="#modalb2" data-info-target="REFLX02">REF02</button>
+    
+    
+    
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+
+    <div  class="modal-body" id="modalb2"></div>
+            <div class="IC">
+                <div id="REFLX01">"Send LX"</div>
+                <div id="REFLX02">"Patient List, Case IDE Number"</div>
+               
+               
+              
+            </div>
+</div>
+<!-- New Seg -->
+<div class="modal" id="REF1J">
+  <div class="modal-header">
+  <button data-modal-target="#modalb3" data-info-target="REF1J01">REF01</button>
+  <button data-modal-target="#modalb3" data-info-target="REF1J02">REF02</button>
+  
+  
+  
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+
+  <div  class="modal-body" id="modalb3"></div>
+          <div class="IC">
+              <div id="REF1J01">"Hardcode 1J"</div>
+              <div id="REF1J02">"Pull from Case/EDI Tab, Care Plan Oversight Number."</div>
+             
+             
+            
+          </div>
+</div>
+<div class="modal" id="REFX4">
+  <div class="modal-header">
+  <button data-modal-target="#modalb4" data-info-target="REFX401">REF01</button>
+  <button data-modal-target="#modalb4" data-info-target="REFX402">REF02</button>
+  
+  
+  
+  <button data-close-button class="close-button">&times;</button>
+
+  </div>
+<!-- Information will go in this body-->
+  <div  class="modal-body" id="modalb4"></div>
+          <div class="IC">
+              <div id="REFX401">"Send X4"</div>
+              <div id="REFX402">"If Case, CLIA Number is not blank, send the Case, CLIA Number.  
+
+                Or if Provider, Provider IDs grid, CLIA Number is not blank, send the Provider, CLIA Number.  
+                
+                Or if Facility, Facility IDs grid, CLIA Number is not blank, send the Facility, CLIA Number."</div>
+             
+             
+            
+          </div>
+</div>
+<!-- New Loop -->
+<section class="Contain">
+	<i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2310E
+      <br>"Ambulance Pick Up Location"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NME1" >Segment NM1: Supervising Provider Name</button>
+	  <button   data-modal-target="#NE3" >Segment N3:<br> Ambulance Pick UP Location Address</button>
+	  <button   data-modal-target="#NE4" >Segment N4:<br> Ambulance Pick UP Location City/State/Zip</button>
+   </section>
+  <div class="modal" id="NME1">
+      <div class="modal-header">
+      <button data-modal-target="#modalb7" data-info-target="NME101">NM101</button>
+      <button data-modal-target="#modalb7" data-info-target="NME103">NM103</button>
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+
+      <div  class="modal-body" id="modalb7"></div>
+              <div class="IC">
+                  <div id="NME101">"Send DQ"</div>
+                 
+                    <div id="NME103">"If the Referring Providers window, Referring Provider IDs tab grid entry, Entity Type is Person, send Last Name.
+If the Referring Providers window, Referring Provider IDs tab grid entry, Entity Type is Non-Person, send Last Name plus First Name.
+Referring Provider, Last Name (Supervising Provider or Primary Care Provider)"</div>
+              </div>
+  </div>
+<!-- New Sgement -->
+  <div class="modal" id="NE3">
+      <div class="modal-header">
+      <button data-modal-target="#modalb8" data-info-target="NE301">N301</button>
+      <button data-modal-target="#modalb8" data-info-target="NE302">N302</button>
+      <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div  class="modal-body" id="modalb8"></div>
+              <div class="IC">
+                  <div id="NE301">"Pick Up Location Address 1 from Ambulance tab of patient case."</div>
+                 
+                    <div id="NE302">"Pick Up Location Address 2 from Ambulance tab of patient case."</div>
+              </div>
+  </div>
+<!-- New Sgement -->
+  <div class="modal" id="NE4">
+      <div class="modal-header">
+      <button data-modal-target="#modalb9" data-info-target="NE401">N401</button>
+      <button data-modal-target="#modalb9" data-info-target="NE402">N402</button>
+	  <button data-modal-target="#modalb9" data-info-target="NE403">N403</button>
+      <button data-close-button class="close-button">&times;</button> 
+      </div>
+      <div  class="modal-body" id="modalb9"></div>
+              <div class="IC">
+                  <div id="NE401">"Pick up Location City from the Ambulance tab in Patient case."</div>
+                 
+                    <div id="NE402">"Pick up Location State from the Ambulance tab in patient case."</div>
+					<div id="NE403">"Pick up Location Zip from the Ambulance tab in Patient case."</div>
+              </div>
+  </div>
+<!-- New Loop -->
+<section class="Contain">
+	<i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2310F
+      <br>"Other Payer Supervising Provider"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NMF1" >Segment NM1: Ambulance Drop Off Location</button>
+	  <button   data-modal-target="#NF3" >Segment N3: Ambulance Drop Off Location Address</button>
+	
+   </section>
+  <div class="modal" id="NMF1">
+      <div class="modal-header">
+      <button data-modal-target="#modalb10" data-info-target="NMF101">NM101</button>
+      <button data-modal-target="#modalb10" data-info-target="NMF103">NM103</button>
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+
+      <div  class="modal-body" id="modalb10"></div>
+              <div class="IC">
+                  <div id="NMF101">"Hardcode 45"</div>
+                 
+                    <div id="NMF103">"Drop Off Location
+ Drop off Location from the Ambulance tab in Patient case."</div>
+              </div>
+  </div>
+<!-- New Sgement -->
+  <div class="modal" id="NF3">
+      <div class="modal-header">
+      <button data-modal-target="#modalb11" data-info-target="NF301">N301</button>
+ 
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+
+      <div  class="modal-body" id="modalb11"></div>
+              <div class="IC">
+                  <div id="NF301">"Drop Off Location Address 1 from Ambulance tab of patient case."</div>
+                 
+          </div>
+  </div>
+  <!-- New Loop -->
+<section class="Contain">
+  <i>*Loops will vary by Payer*</i>
+  <h1>Electronic Location:
+    <br>Loop 2400
+    <br>"Service Line Number"
+    </h1>
+    <h2>Segments</h2>
+<div class ="segments">
+    <button   data-modal-target="#REF0X4" >Segment REF: CLIA ID</button>
+    <button   data-modal-target="#REF04" >Segment REF: Referring CLIA Facility ID</button>
+</section>
+<div class="modal" id="REF0X4">
+    <div class="modal-header">
+    <button data-modal-target="#modalb5" data-info-target="REF0X401">REF01</button>
+    <button data-modal-target="#modalb5" data-info-target="REF0X402">REF02</button>   
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+    <div  class="modal-body" id="modalb5"></div>
+            <div class="IC">
+                <div id="REF0X401">"Hardcode X4"</div>
+                <div id="REF0X402">"If the Providers window, Provider IDs tab, Provider IDs grid entry CLIA button is selected, then send the value in the CLIA field"</div>
+  </div>
+</div>
+<!-- New Seg -->
+<div class="modal" id="REF04">
+  <div class="modal-header">
+  <button data-modal-target="#modalb6" data-info-target="REF0401">REF01</button>
+  <button data-modal-target="#modalb6" data-info-target="REF0402">REF02</button> 
+  <button data-close-button class="close-button">&times;</button>
+  </div>
+  <div  class="modal-body" id="modalb6"></div>
+          <div class="IC">
+              <div id="REF0401">"Send F4
+                Exception: If the code is 99000 or 36415 and the pos is 11 or 12, do not treat the entry as a purchased service. This applies applied to the claim level and to the transaction level."</div>
+              <div id="REF0402">"Facility, ID"</div>
+          </div>
+  </div> 
+</div>
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 23</i>
+  <video autoplay controls muted>
+    <source src="Box23/BoxLoc23.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

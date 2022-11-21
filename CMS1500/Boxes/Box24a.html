@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+<section class="Contain">
+  <i>*Loops will vary by Payer*</i>
+  <h1>Electronic Location:
+    <br>Loop 2400
+    <br>"Service Line Number"
+    </h1>
+    <h2>Segments</h2>
+<div class ="segments">
+    <button   data-modal-target="#DTP" >Segment DTP: Service Date</button>
+  
+</section>
+<div class="modal" id="DTP">
+    <div class="modal-header">
+    <button data-modal-target="#modalb1" data-info-target="DPT1">DTP</button>
+    <button data-modal-target="#modalb1" data-info-target="DPT01">DTP01</button>
+    <button data-modal-target="#modalb1" data-info-target="DPT02">DTP02</button>   
+    <button data-modal-target="#modalb1" data-info-target="DPT03">DTP03</button>
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+    <div  class="modal-body" id="modalb1"></div>
+            <div class="IC">
+                <div id="DPT1">"Send DTP"</div>
+                <div id="DPT01">"Send 472"</div>
+                <div id="DPT02">"If From Date equals To Date, then send D8.
+                    Otherwise, send RD8."</div>
+                <div id="DPT03">"If From Date equals To Date, then send Claim, Transaction Date From.
+                    Otherwise, send Claim, Transaction Date From – Claim, Transaction Date To."</div>
+  </div>
+</div>
+
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 24a</i>
+  <video autoplay controls muted>
+    <source src="Box24a/BoxLoc24a.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

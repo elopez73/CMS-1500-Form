@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+  <div class ="Loops">
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2300
+      <br>"Claim Information"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+      <button   data-modal-target="#CLM" >Segment CLM: Claim Information</button>
+  </section>
+ 
+  <div class="modal" id="CLM">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="CLM05">CLM05-1</button>
+      <button data-close-button class="close-button">&times;</button> 
+      </div>
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="CLM05">"Transaction Entry, Place of Service"</div>     
+              </div>
+  </div>
+  <!-- New Loop -->
+<section class="Contain">
+  <i>*Loops will vary by Payer*</i>
+  <h1>Electronic Location:
+    <br>Loop 2400
+    <br>"Service Line Number"
+    </h1>
+    <h2>Segments</h2>
+<div class ="segments">
+    <button   data-modal-target="#SV1" >Segment SV1: Professional Service</button>
+</section>
+<div class="modal" id="SV1">
+    <div class="modal-header">
+    <button data-modal-target="#modalb5" data-info-target="SV105">SV105</button>
+     
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+    <div  class="modal-body" id="modalb5"></div>
+            <div class="IC">
+                <div id="SV105">"Claim, Transaction Place of Service
+                    NYGH:  Only sent if different from POS on first transaction. "</div>
+    </div>
+</div>
+  </div>
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 24b</i>
+  <video autoplay controls muted>
+    <source src="Box24b/BoxLoc24b.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+   
+  
+   
+
+  
+     
+          <section class="Contain">
+            <i>*Loops will vary by Payer*</i>
+            <h1>Electronic Location:
+              <br>Loop 2400
+              <br>"Service Line Number"
+              </h1>
+              <h2>Segments</h2>
+              <i>When submitting a PS1 segement, the facility information<br>
+                must also be in either Loop 2310D or 2420C.
+              </i>
+          <div class ="segments">
+          
+              <button   data-modal-target="#PS1" >Segment NM1: Referring Provider Name</button>
+            </section>
+          <div class="modal" id="PS1">
+              <div class="modal-header">
+             
+              <button data-modal-target="#modalb1" data-info-target="PS102">PS102</button>
+            
+              <button data-close-button class="close-button">&times;</button>
+          
+              </div>
+          <!-- Information will go in this body-->
+              <div  class="modal-body" id="modalb1"></div>
+                      <div class="IC">
+                          
+                            <div id="PS102">"Pulls from the Purchased Service Charge Amount field on the Procedure Code."</div>
+                         
+                            
+                      </div>
+          </div>
+
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+    <h1>Medisoft Location for Paper Claims</h1>
+    <i>Box 20</i>
+    <video autoplay controls muted>
+      <source src="Box20/BoxLoc20.mp4" type="video/mp4">
+    </video>
+  </section>
+</body>
+</html>

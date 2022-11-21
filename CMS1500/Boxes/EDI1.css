@@ -12,14 +12,32 @@ body:not(div.blank) {
 	align-items: top;
 	background-color: rgb(229, 237, 241);
 	font-family: Arial, Helvetica, sans-serif;
-  max-width: 100vw;
-  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    
+	-ms-overflow-style: none;  /* IE and Edge */
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	width: 5px;
+
+
+}
+body::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	overflow-x: hidden;
+  }
+  body::-webkit-scrollbar-thumb {
+	background: #888; 
+	overflow-x: hidden;
+  }
 .Loops {
 	display: flex;
 	flex-direction: column;
-  width: 25%;
-  max-height: 100%;
+  	width: 25%;
+  	height: 100%;
 	text-align: center;
 	font-size: 1vw;
 }
@@ -30,12 +48,15 @@ h1 {
 	font-size: 1.5vw;
 }
 .mediGuide {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
+	margin-top: 0;
+	padding: 0;
 	border-radius: 10px;
 	width: 75%;
-	justify-content: center;
-	height: 2%;
+	justify-content: top;
+	height: 100%;
 }
 
 .mediGuide img {
@@ -48,7 +69,7 @@ h1 {
 .Contain {
 	display: block;
 	margin-top: 5%;
-
+	padding-right: 1%;
 	height: 100%;
 	text-align: center;
 	font-size: 1vw;
@@ -155,7 +176,8 @@ h1 {
 }
 video {
 	object-fit: fill;
-	width: 100%;
+	width: 95%;
+	height: 85%;
 	border-style: solid;
 	border-radius: 10px;
 	border-color: darkgrey;
@@ -173,12 +195,9 @@ video {
 
 	width: 50%;
 	height: fit-content;
-
-	
 	text-align: center;
 	word-spacing: 1px;
 	padding: 0.5em;
-
 	background: linear-gradient(to right, hsl(211, 19%, 44%), hsl(213, 9%, 47%));
 	color: #c9dadb;
 	font-weight: 300;
@@ -186,7 +205,7 @@ video {
 	border: 1px solid black;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 	border-radius: 6px;
-  animation: fadeIn 1.5s;
+  	animation: fadeIn 1.5s;
 }
 
 .usage {

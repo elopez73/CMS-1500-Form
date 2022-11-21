@@ -1,12 +1,12 @@
 button {
 	padding: 0.5em 0.5em;
-	font-size: 0.9vw;
-	text-transform: uppercase;
-	letter-spacing: 2.5px;
+	font-size: 0.8vw;
+	
+	letter-spacing: .1vw;
 	margin-top: 0.5em;
 	margin-bottom: 1em;
-	width: fit-content;
-	font-weight: 500;
+	width: max-content;
+	font-weight: 450;
 	color: #000;
 	background: linear-gradient(to right, hsl(211, 19%, 44%), hsl(213, 9%, 47%));
 	border: none;
@@ -16,12 +16,12 @@ button {
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 	outline: none;
+	
 }
 
 button:hover {
 	background-color: #73c6c9;
 	box-shadow: 0px 15px 20px rgba(119, 211, 218, 0.4);
-
 	transform: translateY(-5px);
 }
 

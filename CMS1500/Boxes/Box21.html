@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2300
+      <br>"Claim Information"
+      </h1>
+      <h2>Segments</h2>
+      <i>Up to twelve segements will create, based on the amount of diagnosis codes used.</i>
+  <div class ="segments">
+
+      <button   data-modal-target="#HI" >Segment HI: Health Care Diagnosis Code</button>
+	 
+	  
+  </section>
+ 
+  <div class="modal" id="HI">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="HI01-1">HI01-1</button>
+      <button data-modal-target="#modalb1" data-info-target="HI01-2">HI01-2</button>
+      <button data-modal-target="#modalb1" data-info-target="HI02-1">HI02-1</button>
+      <button data-modal-target="#modalb1" data-info-target="HI02-2">HI02-2</button>
+      <button data-modal-target="#modalb1" data-info-target="HI03-1">HI03-1</button>
+      <button data-modal-target="#modalb1" data-info-target="HI03-2">HI03-2</button>
+      
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="HI01-1">"Send BK if ICD-9 is selected for the insurance carrier.
+                    Send ABK if ICD-10 is selected."</div>
+                  <div id="HI01-2">"Claim, Diagnosis 1 (based on Insurance Diagnosis Code Set)
+                    "</div>
+                  <div id="HI02-1">"Send BF if ICD-9 is selected for the insurance carrier.
+                    Send ABF if ICD-10 is selected."</div>
+                  <div id="HI02-2">"Claim, Diagnosis 2 (based on Insurance Diagnosis Code Set)"</div>
+                  <div id="HI03-1">"Send BF if ICD-9 is selected for the insurance carrier.
+                    Send ABF if ICD-10 is selected"</div>
+                  <div id="HI03-2">"Claim, Diagnosis 3 (based on Insurance Diagnosis Code Set)"</div>
+                 
+                
+              </div>
+  </div>
+  
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 20</i>
+  <video autoplay controls muted>
+    <source src="Box20/BoxLoc20.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

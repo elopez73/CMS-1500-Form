@@ -63,12 +63,31 @@ const Blank = document.getElementById("Blank");
   }
 
 }
+window.addEventListener('resize',onMobile);
+
+function onMobile()
+{
+        var height = document.body.clientHeight;
+        var width = document.body.clientWidth;
+        const nav1 = document.getElementById("nav1");
+        const ul1 = document.getElementById("ul1");
+        if(width <= '400')
+        {
+                nav1.classList.add("mobile");
+                ul1.classList.add("mobile");
+        }
+        if(width >= '400')
+        {
+                nav1.classList.remove("mobile");
+                ul1.classList.remove("mobile");
+        }
+
+}
 function openBlank()
 {
         const blank = document.getElementById("Blank");
         if (blank == null) return;
         blank.classList.toggle("active")
-
 }
 
 function openBox()

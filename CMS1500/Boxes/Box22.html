@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2300
+      <br>"Claim Information"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+
+      <button   data-modal-target="#REF" >Segment REF: Original Reference Number</button>
+	 
+	  
+  </section>
+ 
+  <div class="modal" id="REF">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="REF01">REF01</button>
+      <button data-modal-target="#modalb1" data-info-target="REF02">REF02</button>
+      
+      
+      
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="REF01">"Send F8"</div>
+                  <div id="REF02">"Case, Medicaid Original Ref No."</div>
+                 
+                 
+                
+              </div>
+  </div>
+  
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 22</i>
+  <video autoplay controls muted>
+    <source src="Box22/BoxLoc22.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

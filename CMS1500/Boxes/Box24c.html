@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+  <div class ="Loops">
+<section class="Contain">
+  <i>*Loops will vary by Payer*</i>
+  <h1>Electronic Location:
+    <br>Loop 2400
+    <br>"Service Line Number"
+    </h1>
+    <h2>Segments</h2>
+<div class ="segments">
+    <button   data-modal-target="#SV1" >Segment SV1: Professional Service</button>
+</section>
+<div class="modal" id="SV1">
+    <div class="modal-header">
+    <button data-modal-target="#modalb5" data-info-target="SV109">SV109</button>
+     
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+    <div  class="modal-body" id="modalb5"></div>
+            <div class="IC">
+                <div id="SV109">"Case, Emergency "</div>
+    </div>
+</div>
+  </div>
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 24c</i>
+  <video autoplay controls muted>
+    <source src="Box24c/BoxLoc24c.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

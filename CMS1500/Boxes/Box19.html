@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+   
+  
+   
+       
+<div class="Loops">
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2300 and Loop 2400
+      <br>"Claim Information"
+      </h1>
+      <h2>Segments not Specified: Extra Narative Data</h2>    
+  <div class ="segments">
+      
+  </section>
+ 
+  <div class="modal" id="CLM">
+      <div class="modal-header">
+      <button data-close-button class="close-button">&times;</button>
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb100"></div>
+              <div class="IC">
+                  
+                
+              </div>
+  </div>
+ 
+ 
+        <section class="Contain">
+            <i>*Loops will vary by Payer*</i>
+            <h1>Electronic Location:
+              <br>Loop 2300 
+              <br>"Claim Information"
+              </h1>
+              <h2>Segments</h2>
+          <div class ="segments">
+          
+              
+              <button   data-modal-target="#CRCHI" >Segment CRC: Hombound Indicator</button>
+              <button   data-modal-target="#REFP4" >Segment REF: Demonstration Project Identifier</button>
+              <button   data-modal-target="#DTP304" >Segment DTP: Date Last Seen</button>
+              <button   data-modal-target="#DTP090" >Segment DTP: Date Assumed Care</button>
+              <button   data-modal-target="#DTP091" >Segment DTP: Date Relenquished Care</button>
+              <button   data-modal-target="#DTP455" >Segment DTP: Date Last X-Ray</button>
+          </section>
+          <div class="modal" id="DTP304">
+                  <div class="modal-header">
+                  <button data-modal-target="#modalb1" data-info-target="DTP30401">DTP01</button>
+                  <button data-modal-target="#modalb1" data-info-target="DTP30403">DTP03</button>
+                  <button data-close-button class="close-button">&times;</button>
+              
+                  </div>
+             
+                  <div  class="modal-body" id="modalb1"></div>
+                          <div class="IC">
+                              <div id="DTP30401">"Send 304"</div>
+                              <div id="DTP30403" >"If Case, Miscellaneous tab, Date Last Seen has a valid date, send that date."</div>
+                       
+                            
+                          </div>
+                </div>
+                <!-- New Segment -->
+                <div class="modal" id="CRCHI">
+                    <div class="modal-header">
+                    <button data-modal-target="#modalb2" data-info-target="CRCHI01">CRC01</button>
+                    <button data-modal-target="#modalb2" data-info-target="CRCHI03">CRC03</button>
+                    <button data-close-button class="close-button">&times;</button>
+                
+                    </div>
+               
+                    <div  class="modal-body" id="modalb2"></div>
+                            <div class="IC">
+                                <div id="CRCHI01">"Send 75"</div>
+                                <div id="CRCHI03" >"HI qualifier"</div>
+                         
+                              
+                            </div>
+                  </div>
+                   <!-- New Segment -->
+                <div class="modal" id="REFP4">
+                    <div class="modal-header">
+                    <button data-modal-target="#modalb3" data-info-target="REFP401">CRC01</button>
+                    <button data-modal-target="#modalb3" data-info-target="REFP402">CRC03</button>
+                    <button data-close-button class="close-button">&times;</button>
+                
+                    </div>
+               
+                    <div  class="modal-body" id="modalb3"></div>
+                            <div class="IC">
+                                <div id="REFP401">"Send P4"</div>
+                                <div id="REFP402" >"If Case, Demo Code has a value, send the value.
+
+                                    is 39, send 39.  
+                                    
+                                    If Case, Demo Code is 45, send 45.
+                                    "</div>
+                         
+                              
+                            </div>
+                  </div>
+                  <!-- New Segment -->
+                <div class="modal" id="DTP090">
+                    <div class="modal-header">
+                    <button data-modal-target="#modalb4" data-info-target="DTP09001">CRC01</button>
+                    <button data-modal-target="#modalb4" data-info-target="DTP09003">CRC03</button>
+                    <button data-close-button class="close-button">&times;</button>
+                
+                    </div>
+               
+                    <div  class="modal-body" id="modalb4"></div>
+                            <div class="IC">
+                                <div id="DTP09001">"Send 090 in the ANSI 4010.
+
+                                    In the ANSI 5010, if Date Assumed Care is populated in the Case Condition tab, send 090.
+                                    
+                                    If Date Relinquished Care is populated in the case Condition tab, send 091.  
+                                    
+                                    If both are populated, send 090."</div>
+                                <div id="DTP09003" >"Case, Condition tab, Date Assumed Care.
+
+                                    In the ANSI 5010, if Date Assumed Care is populated in the Case Condition tab, send that date in the format specified..
+                                    
+                                    If Date Relinquished Care is populated in the case Condition tab, send that date in the format specified.  
+                                    
+                                    If both are populated, send the Date Assumed Care.
+                                    "</div>
+                         
+                              
+                            </div>
+                  </div>
+                  <!-- New Segment -->
+                <div class="modal" id="DTP091">
+                    <div class="modal-header">
+                    <button data-modal-target="#modalb5" data-info-target="DTP09101">CRC01</button>
+                    <button data-modal-target="#modalb5" data-info-target="DTP09103">CRC03</button>
+                    <button data-close-button class="close-button">&times;</button>
+                
+                    </div>
+               
+                    <div  class="modal-body" id="modalb5"></div>
+                            <div class="IC">
+                                <div id="DTP09101">"Send 091"</div>
+                                <div id="DTP09103" >"Case, Condition tab, Date Relinquished Care"</div>
+                         
+                              
+                            </div>
+                  </div>
+                   <!-- New Sgement -->
+        <div class="modal" id="DTP455">
+            <div class="modal-header">
+            <button data-modal-target="#modalb6" data-info-target="DTP45501">DTP01</button>
+            <button data-modal-target="#modalb6" data-info-target="DTP45503">DTP03</button>
+            <button data-close-button class="close-button">&times;</button>
+        
+            </div>
+       
+            <div  class="modal-body" id="modalb6"></div>
+                    <div class="IC">
+                        <div id="DTP45501">"Send 455"</div>
+                        <div id="DTP45503" >"Case, Condition tab, Last X-Ray Date"</div>
+                 
+                      
+                    </div>
+          </div>
+          
+          <section class="Contain">
+            <i>*Loops will vary by Payer*</i>
+            <h1>Electronic Location:
+              <br>Loop 2310C
+              <br>"Service Facility Location"
+              </h1>
+              <h2>Segments</h2>
+          <div class ="segments">
+          
+              <button   data-modal-target="#NM2" >Segment NM1: Purchesed Service Provider Name</button>
+            </section>
+          <div class="modal" id="NM2">
+              <div class="modal-header">
+              <button data-modal-target="#modalb7" data-info-target="NM201">NM101</button>
+              <button data-modal-target="#modalb7" data-info-target="NM208">NM109</button>
+              <button data-modal-target="#modalb7" data-info-target="NM209">NM109</button>
+              <button data-close-button class="close-button">&times;</button>
+          
+              </div>
+          <!-- Information will go in this body-->
+              <div  class="modal-body" id="modalb7"></div>
+                      <div class="IC">
+                            <div id="NM208">"If the Facility window, Facility IDs tab grid entry, National Provider ID, has a value, then send XX.
+
+                                If Address, Facility, National ID has a value, send XX.
+                                
+                                Send 24."</div>
+                         
+                            <div id="NM209">"If the Facility window, Facility IDs tab grid entry, National Provider ID has a value, then send the value in that field.
+
+                                If Address, Facility, National ID has a value, send the value in that field.
+                                
+                                Otherwise, send Address, Facility, Identifier"</div>
+                      </div>
+          </div>
+          <section class="Contain">
+            <i>*Loops will vary by Payer*</i>
+            <h1>Electronic Location:
+              <br>Loop 2310D
+              <br>"Service Facility Location"
+              </h1>
+              <h2>Segments</h2>
+          <div class ="segments">
+          
+              <button   data-modal-target="#NM1" >Segment NM1: Referring Provider Name</button>
+            </section>
+          <div class="modal" id="NM1">
+              <div class="modal-header">
+              <button data-modal-target="#modalb8" data-info-target="NM101">NM101</button>
+              <button data-modal-target="#modalb8" data-info-target="NM108">NM108</button>
+              <button data-modal-target="#modalb8" data-info-target="NM109">NM109</button>
+              <button data-close-button class="close-button">&times;</button>
+           
+              </div>
+          <!-- Information will go in this body-->
+              <div  class="modal-body" id="modalb8"></div>
+                      <div class="IC">
+                          <div id="NM101">"If the Facilities window, Facility IDs tab, Facility IDs grid entry Send Facility on Claim box is selected, send the qualifier in the ID Qualifier list.
+
+
+
+                            If Address, Type is Laboratory,  then send LI.
+                            
+                            If Address, Type is Miscellaneous, then send 77.
+                            
+                            If Address, Entity ID is not blank, then send the Entity ID.  
+                            
+                            Otherwise, send FA.
+                            
+                            In the ANSI 5010, hardcode 77.
+                            "</div>
+                            <div id="NM108">"If an NPI number is present, XX is sent.
+
+                                The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.
+                                If Address, Facility, National ID has a value, send XX.
+                                
+                                Otherwise, send 24."</div>
+                         
+                            <div id="NM109">"If an NPI number is present, send that value.
+
+                                The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.
+                                
+                                If Address, Facility, National ID has a value, send the value in that field.
+                                
+                                Send Address, Facility, Identifier."</div>
+                      </div>
+          </div>
+          <section class="Contain">
+            <i>*Loops will vary by Payer*</i>
+            <h1>Electronic Location:
+              <br>Loop 2400
+              <br>"Claim Information"
+              </h1>
+              <h2>Segments</h2>
+          <div class ="segments">
+              <button   data-modal-target="#DTP304" >Segment DTP: Date Last Seen</button>   
+              <button   data-modal-target="#DTP455" >Segment DTP: Date Last X-Ray</button>
+          </section>
+          <section class="Contain">
+            <i>*Loops will vary by Payer*</i>
+            <h1>Electronic Location:
+              <br>Loop 2420B
+              <br>"Purchesed Service Provider Name"
+              </h1>
+              <h2>Segments</h2>
+          <div class ="segments">
+          
+              <button   data-modal-target="#NM3" >Segment NM1: Referring Provider Name</button>
+            </section>
+          <div class="modal" id="NM3">
+              <div class="modal-header">
+             
+              <button data-modal-target="#modalb9" data-info-target="NM308">NM108</button>
+              <button data-modal-target="#modalb9" data-info-target="NM309">NM109</button>
+              <button data-close-button class="close-button">&times;</button>
+          
+              </div>
+          <!-- Information will go in this body-->
+              <div  class="modal-body" id="modalb9"></div>
+                      <div class="IC">
+                          
+                            <div id="NM308">"If an NPI number is present at the facility level, XX is sent.
+
+                                The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.
+                                
+                                For the ANSI 5010, send XX if the NPI number is present at the facility level.  Do not send anything if not.
+                                
+                                If Address, Facility, National ID has a value, send XX.
+                                
+                                Otherwise, send 24"</div>
+                         
+                            <div id="NM309">"If an NPI number is present at the facility level, send that value.
+
+                                The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.
+                                
+                                If Address, Facility, National ID has a value, send the value in that field.
+                                
+                                Otherwise, send Address, Facility, Identifier."</div>
+                      </div>
+          </div>
+          <section class="Contain">
+            <i>*Loops will vary by Payer*</i>
+            <h1>Electronic Location:
+              <br>Loop 2420D
+              <br>"Supervising Provider Name"
+              </h1>
+              <h2>Segments</h2>
+          <div class ="segments">
+          
+              <button   data-modal-target="#NM4" >Segment NM1: Referring Provider Name</button>
+            </section>
+          <div class="modal" id="NM4">
+              <div class="modal-header">
+             
+              <button data-modal-target="#modalb10" data-info-target="NM408">NM108</button>
+              <button data-modal-target="#modalb10" data-info-target="NM409">NM109</button>
+              <button data-close-button class="close-button">&times;</button>
+          
+              </div>
+          <!-- Information will go in this body-->
+              <div  class="modal-body" id="modalb10"></div>
+                      <div class="IC">
+                          
+                            <div id="NM408">"Hardcode XX"</div>
+                         
+                            <div id="NM409">"If an NPI number is present at the facility level, send that value.
+
+                                The appropriate grid entry for NPI, employer identification number, or social security number is selected by the rules engine.
+                                
+                                In the ANSI 5010, if the Provider IDs tab grid entry, National Provider ID has a value for the provider selected as Supervising Provider in the case, then send the value in that field.
+                                
+                                If Address, Facility, National ID has a value, send the value in that field.
+                                
+                                Otherwise, send Address, Facility, Identifier."</div>
+                      </div>
+          </div>
+</div>
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+    <h1>Medisoft Location for Paper Claims</h1>
+    <i>Box 19</i>
+    <video autoplay controls muted>
+      <source src="Box19/BoxLoc19.mp4" type="video/mp4">
+    </video>
+  </section>
+</body>
+</html>
