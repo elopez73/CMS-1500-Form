@@ -63,6 +63,7 @@ const Blank = document.getElementById("Blank");
   }
 
 }
+
 window.addEventListener('resize',onMobile);
 
 function onMobile()
