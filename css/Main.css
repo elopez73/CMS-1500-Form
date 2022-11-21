@@ -31,35 +31,36 @@ body::-webkit-scrollbar{
 .navbar.mobile
 {
 	position: relative;
-	max-width: 480px;
-	height: fit-content;
+	max-width: 400px;
+	height: 12rem;
 	display: block;
-	align-items: center;
+
 	color: white;
- 	 padding: 14px 16px;
+ 	padding: 0;
   	text-decoration: none;
-  	font-size: 17px;
-  	display: block;
+  	
+
  	border: none;
-	justify-content: center;
+	
+	margin: 0;
 	
 }
-.navbar ul.mobile
+.navbar ul.mobile 
 {
-	justify-content: center;
-	position: relative;
-	width: fit-content;
-	height: max-content;
-	display: block;
-	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	color: white;
- 	 
   	text-decoration: none;
-  	font-size: 17px;
-  	display: block;
+	padding: 0;
+	margin: 0;
  	border: none;
+	font-size: 80%;
+	height: fit-content;
 
 }
+
 .navbar{
 	position: fixed;
 	top: 0;
@@ -83,6 +84,8 @@ body::-webkit-scrollbar{
 }
 .navbar ul li {
 	display: flex;
+	width: fit-content;
+	height: fit-content;
 	margin: 0.1rem 2rem;
 	padding: 0.8rem;
 	border-top: 2px solid #575757;
@@ -90,6 +93,7 @@ body::-webkit-scrollbar{
 }
 .navbar ul li a {
 	display: flex;
+	margin: 0;
 	text-decoration: none;
 	align-self: center;
 	font-weight: 700;
@@ -108,7 +112,7 @@ body::-webkit-scrollbar{
 	display: inline-block;
 	justify-content: left;
 	align-self: center;
-	padding-left: 5%;
+	padding-left: 1%;
 }
 
 #Home {

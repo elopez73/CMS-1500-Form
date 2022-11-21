@@ -72,15 +72,20 @@ function onMobile()
         var width = document.body.clientWidth;
         const nav1 = document.getElementById("nav1");
         const ul1 = document.getElementById("ul1");
+
+
         if(width <= '400')
         {
                 nav1.classList.add("mobile");
                 ul1.classList.add("mobile");
+               
+
         }
         if(width >= '400')
         {
                 nav1.classList.remove("mobile");
                 ul1.classList.remove("mobile");
+        
         }
 
 }
