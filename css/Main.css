@@ -31,7 +31,7 @@ body::-webkit-scrollbar{
 .navbar.mobile
 {
 	position: relative;
-	max-width: 400px;
+	max-width: 500px;
 	height: 12rem;
 	display: block;
 
