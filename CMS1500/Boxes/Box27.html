@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+<div class="Loops">
+
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2300
+      <br>"Claim Information"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#CLM" >Segment CLM: Health Claim</button>
+
+	 
+	  
+  </section>
+ 
+  <div class="modal" id="CLM">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="CLM07">CLM07</button>
+
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="CLM07">"If there is a value in Case, EDI tab, Assignment Indicator, send that value.
+
+                    If there is not a value in the Assignment Indicator, look at the Case, Policy 1 or Policy 2, Assignment of Benefits/Accept Assignment box. If the box is checked, send A.  If it is not checked, send C.
+                    "</div>
+                  
+                
+              </div>
+  </div>
+
+  
+
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 27</i>
+  <video autoplay controls muted>
+    <source src="Box27/BoxLoc27.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>
