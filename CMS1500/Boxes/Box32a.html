@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+    <div class="Loops">
+
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2310C
+      <br>"Claim Information"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NM1" >Segment REF: Purchased Service Provider Name</button>
+     
+	 
+	  
+  </section>
+ 
+  <div class="modal" id="NM1">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="NM108">NM108</button>
+      <button data-modal-target="#modalb1" data-info-target="NM109">NM109</button>
+
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="NM108">"If the Facility window, Facility IDs tab grid entry, National Provider ID, has a value, then send XX.
+
+                    If Address, Facility, National ID has a value, send XX.
+                    
+                    Send 24.
+
+                    "</div>
+                    <div id="NM109">"If the Facility window, Facility IDs tab grid entry, National Provider ID has a value, then send the value in that field.
+                        If Address, Facility, National ID has a value, send the value in that field.                       
+                        Otherwise, send Address, Facility, Identifier
+                        "</div>
+                  
+                
+              </div>
+  </div>
+
+        
+              
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 32a</i>
+  <video autoplay controls muted>
+    <source src="Box32a/BoxLoc32a.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>

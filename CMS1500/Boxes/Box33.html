@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+    <div class="Loops">
+
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2010AA
+      <br>"Billing Provider Name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NM1" >Segment NM1: Billing Provider Name</button>
+      <button   data-modal-target="#N3" >Segment N3: Billing Provider Address</button>
+      <button   data-modal-target="#N4" >Segment N4: Billing Provider City/State/Zip</button>
+     
+	 
+	  
+  </section>
+ 
+  <div class="modal" id="NM1">
+      <div class="modal-header">
+      <button data-modal-target="#modalb1" data-info-target="NM101">NM101</button>
+      <button data-modal-target="#modalb1" data-info-target="NM103">NM103</button>
+      <button data-modal-target="#modalb1" data-info-target="NM104">NM104</button>
+      <button data-modal-target="#modalb1" data-info-target="NM105">NM105</button>
+
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  <div id="NM101">"Send 85
+
+
+                    "</div>
+                    <div id="NM103">"If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Individual button is selected, then send the Address tab, Last Name field.
+
+                        If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Group button is selected,  then send the Practice Information window, Practice tab, Practice Name.
+                        
+                        In either case, the appropriate grid entry is selected by the rules engine. 
+                        
+                        If EDI Receiver, Extras tab, Entity Type is Person, then send Provider, Last Name.
+                        
+                        If EDI Receivers, Extras tab, Entity Type is Non-Person, then look at the Practice Entity Type.
+                        
+                        If Practice Information, Entity Type is Person, enter the name Last Name, First Name in the Practice Information, Practice Name field.  The program pulls whatever is before the comma in NM103.  
+                        
+                        If Practice Information, Entity Type is Non-Person, send Practice Information, Practice Name.
+                        
+                        "</div>
+                        <div id="NM104">"If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Individual button is selected, then send the Address tab, First Name field.
+
+                            If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Group button is selected,  then do not create.
+                            
+                            In either case, the appropriate grid entry is selected by the rules engine. 
+                            
+                            If EDI Receiver, Extras tab, Entity Type is Person, then send Provider, First Name.
+                            
+                            If EDI Receivers, Extras tab, Entity Type is Non-Person, then look at the Practice Entity Type.
+                            
+                            If Practice Information, Entity Type is Person, enter the name Last Name, First Name in the Practice Information, Practice Name field.  The program pulls whatever is after the comma in NM104.
+                            
+                            
+                            "</div>
+                            <div id="NM105">"If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Individual button is selected, then send the Address tab, Middle field if present.
+
+                                If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Group button is selected,  then do not create.
+                                
+                                In either case, the appropriate grid entry is selected by the rules engine.
+                                
+                                If EDI Receiver, Extras tab, Entity Type is Person, then send Provider, Middle Initial.
+          
+                                "</div>
+                                
+                  
+                
+              </div>
+  </div>
+  <div class="modal" id="N3">
+    <div class="modal-header">
+    <button data-modal-target="#modalb2" data-info-target="N301">N301</button>
+
+
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+<!-- Information will go in this body-->
+    <div  class="modal-body" id="modalb2"></div>
+            <div class="IC">
+                <div id="N301">"If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Individual button is selected,  then send the Providers window, Address tab Street 1 field.
+
+                    If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Group button is selected,  then send Practice Information window, Practice tab, Street 1  field.
+                    
+                    In either case, the appropriate grid entry is selected by the rules engine.
+                    
+                    If EDI Receiver, Entity Type is Person, then send Provider, Address tab, Street 1.
+                    
+                    Otherwise, send Practice Information, Address tab, Street 1.
+                    
+
+
+                  "</div>
+                 
+                              
+                
+              
+            </div>
+</div>
+<div class="modal" id="N4">
+    <div class="modal-header">
+    <button data-modal-target="#modalb3" data-info-target="N401">N401</button>
+    <button data-modal-target="#modalb3" data-info-target="N402">N402</button>
+    <button data-modal-target="#modalb3" data-info-target="N403">N403</button>
+
+
+    <button data-close-button class="close-button">&times;</button>
+
+    </div>
+<!-- Information will go in this body-->
+    <div  class="modal-body" id="modalb3"></div>
+            <div class="IC">
+                <div id="N401">"If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Individual button is selected,  then send the Providers window, Address tab City field.
+
+                    If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Group button is selected,  then send Practice Information window, Practice, City.
+                    
+                    In either case, the appropriate grid entry is selected by the rules engine.
+                    
+                    If EDI Receiver, Extras tab, Entity Type is Person, then send Provider, Address tab, City.
+                    
+                    Otherwise, send Practice Information, City.
+                    
+                    
+
+
+                  "</div>
+                  <div id="N402">"If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Individual button is selected,  then send the Providers window, Address tab State field.
+
+                    If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Group button is selected,  then send Practice Information window, Practice  tab, State.
+                    
+                    In either case, the appropriate grid entry is selected by the rules engine.
+                    
+                      
+                    If EDI Receiver, Extras tab, Entity Type is Person, then send Provider, Address tab, State.
+                    
+                    Otherwise, send Practice Information, State.
+                    
+                    
+
+
+                  "</div>
+                  <div id="N403">"If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Individual button is selected,  then send the Providers window, Address tab ZIP Code field.
+
+                    If the Providers window, Provider IDs tab, Provider IDs grid entry Claim Type Group button is selected,  then send Practice Information window, Practice, ZIP Code.
+                    
+                    In either case, the appropriate grid entry is selected by the rules engine.
+                    
+                    If EDI Receiver, Extras tab, Entity Type is Person, then send Provider, Address tab, Zip Code.
+                    
+                    Otherwise, send Practice Information, Zip Code.
+                    
+                    
+
+
+                  "</div>
+                 
+                              
+                
+              
+            </div>
+</div>
+        
+              
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 33</i>
+  <video autoplay controls muted>
+    <source src="Box33/BoxLoc33.mp4" type="video/mp4">
+  </video>
+</section>
+</body>
+</html>
