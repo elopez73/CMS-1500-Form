@@ -65,21 +65,28 @@ window.onclick = function (event) {
 window.addEventListener("resize", onMobile);
 
 function onMobile() {
-	var height = document.body.clientHeight;
+	
 	var width = document.body.clientWidth;
 	const nav1 = document.getElementById("nav1");
 	const ul1 = document.getElementById("ul1");
 	const L1 = document.getElementById("L1");
 
+
 	if (width <= "800") {
 		nav1.classList.add("mobile");
 		ul1.classList.add("mobile");
 		L1.classList.add("mobile");
+		
+		
+		
 	}
 	if (width >= "800") {
 		nav1.classList.remove("mobile");
 		ul1.classList.remove("mobile");
 		L1.classList.remove("mobile");
+		
+		
+		
 	}
 }
 function openBlank() {

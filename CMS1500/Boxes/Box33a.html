@@ -142,6 +142,16 @@
   <video autoplay controls muted>
     <source src="Box33a/BoxLoc33a.mp4" type="video/mp4">
   </video>
+  <p>This field pulls the National Provider ID from either the Practice IDs Grid or the Provider IDs grid.
+
+    The NPI value is pulled from the Practice IDs grid, NPI column if the Provider files claims as a group (Provider IDs grid, Group button is selected).
+    
+    If the provider files claims as an individual (Provider IDs grid, Individual button is selected), then the NPI number is pulled from the Provider IDs grid, NPI column.
+    
+    The application selects the correct entry from the grid, if multiple entries are present, via the rules engine selection process. For more information on rules entry/row selection see, Assigning Rules.
+    
+    Note: if you file claims as an individual, when creating a entry on the Provider IDs grid, you can select whether to pull your ID number from the Provider IDs grid or the Practice IDs grid.  If you set up a rule to pull the value from the Practice IDs grid, and not the Provider IDs grid, the application will pull the value from the Practice grid.
+    </p>
 </section>
 </body>
 </html>

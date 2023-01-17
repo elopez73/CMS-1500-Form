@@ -8,6 +8,7 @@ body {
 	margin: 0;
 	font-family: open sans,Helvetica,Arial,sans-seri;
 	scroll-behavior: smooth !important;
+	background-image: url("Background.jpg");
 }
 body::-webkit-scrollbar {
     display: none;
@@ -367,6 +368,21 @@ body::-webkit-scrollbar{
 	pointer-events: all;
 	animation-duration: 1s;
   	animation-name: slidein;
+	
+}
+
+@media screen and (max-width: 800px) {
+	#box.active {
+	margin-top: 25%;
+	opacity: 1;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	pointer-events: all;
+	animation-duration: 1s;
+  	animation-name: slidein;
+	height: 50%;
+}
 }
 .info2
 {
@@ -385,6 +401,7 @@ body::-webkit-scrollbar{
 	
   	
 }
+
 @keyframes fadeIn {
 	0% {
 		opacity: 0;

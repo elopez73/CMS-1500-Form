@@ -26,11 +26,7 @@
       
   
   </section>
-  
-  
-  
-  
-  
+
   <div class="modal" id="NM1">
       <div class="modal-header">
      
@@ -91,7 +87,10 @@
     <video autoplay controls muted>
       <source src="Box2/BoxLoc2.mp4" type="video/mp4">
     </video>
-    
+    <p>Patient's name. The format is Last name, First Name, and Middle Initial. This information comes from the Patient/Guarantor window, Name, Address tab, Last Name, First Name, Middle Initial fields.
+
+      Note: if the patient's last name has a space in it (for example VAN DYKE), the CMS-1500 form will strip the space and claims may be rejected. You can fix this by changing the field that is used for this box using Reports Designer .In Report Designer, select the Claim report and use the Full Name LFM field for Box 2, instead of Full Name LFM w Comma.
+      </p>
   </section>
 </body>
 </html>

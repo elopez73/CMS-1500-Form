@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="EDI1.css" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+  <script defer src="b1.js"></script>
+</head>
+<body>
+
+
+  <section class="Contain">
+    <i>*Loops will vary by Payer*</i>
+    <h1>Electronic Location:
+      <br>Loop 2330A
+      <br>"Other Insured name"
+      </h1>
+      <h2>Segments</h2>
+  <div class ="segments">
+  
+      <button   data-modal-target="#NM1" >Segment NM1: Other Insured Name</button>
+   
+  
+  </section>
+  
+  
+  
+  
+  
+  <div class="modal" id="NM1">
+      <div class="modal-header">
+    
+      <button data-modal-target="#modalb1" data-info-target="NM109">NM109</button>
+      <button data-close-button class="close-button">&times;</button>
+  
+      </div>
+  <!-- Information will go in this body-->
+      <div  class="modal-body" id="modalb1"></div>
+              <div class="IC">
+                  
+                    <div id="NM109">"If the Claim Responsibility is Primary, this segment will print out Policy Number 1 from the Patient Case in Medisoft.
+                      If the Claim Repsonsibility is Secondary, this segment will print out Policy Number 2.
+                      If the Claim Repsonsibility is Tertiary, this segment will print out Policy Number 3."</div>
+              </div>
+  </div>
+  <!-- This is a new Segment -->
+  <div class="modal" id="NM3">
+    <div class ="usage">Usage Rule: If the Street 1 Address for the other insurance policy holder is empty, this segment will NOT be created.</div>
+    <div class="modal-header">
+    
+    <button data-modal-target="#modalb2" data-info-target="NM301">NM301</button>
+    <button data-modal-target="#modalb2" data-info-target="NM302">NM302</button>
+  
+  
+    <button data-close-button class="close-button">&times;</button>
+  
+    </div>
+    <div  class="modal-body" id="modalb2"></div>
+            <div class="IC">
+                <div id="NM301">"This segment prints out the "Street 1" field in the Address tab in the Insurance Edit window in Medisoft."</div>
+                <div id="NM302" >"This segment prints out the "Street 2" field in the Address tab in the Insurance Edit window in Medisoft."</div>
+            </div>
+  </div>
+  
+  
+
+<div id="overlay"></div>
+</div>
+<section class="mediGuide">
+  <h1>Medisoft Location for Paper Claims</h1>
+  <i>Box 9b</i>
+  <video autoplay controls muted>
+    <source src="Box9b/BoxLoc9b.mp4" type="video/mp4">
+  </video>
+  <p>Reserved for NUCC Use.  Shows the value of the Box 9b field on the Miscellaneous tab of the Case window.
+  </p>
+</section>
+</body>
+</html>
