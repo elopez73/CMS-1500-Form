@@ -73,7 +73,7 @@ h1 {
 }
 
 .mediGuide img {
-	object-fit: fill;
+	object-fit: contain;
 	width: 100%;
 	height: 100%;
 	border-style: solid;
